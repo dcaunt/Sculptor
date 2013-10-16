@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFC3F22F180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
+		BFC3F23D180D5B080034FF3F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F23C180D5B080034FF3F /* XCTest.framework */; };
+		BFC3F23E180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
+		BFC3F243180D5B080034FF3F /* libSculptor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22B180D5B080034FF3F /* libSculptor.a */; };
+		BFC3F249180D5B080034FF3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFC3F247180D5B080034FF3F /* InfoPlist.strings */; };
+		BFC3F24B180D5B080034FF3F /* SculptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F24A180D5B080034FF3F /* SculptorTests.m */; };
+		BFC3F258180D62950034FF3F /* SCLMantleResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F255180D62950034FF3F /* SCLMantleResponseSerializer.m */; };
+		BFC3F259180D62950034FF3F /* SCLURLMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F257180D62950034FF3F /* SCLURLMatcher.m */; };
+		BFF4A875180D8DF300DB663B /* SCLMantleResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F254180D62950034FF3F /* SCLMantleResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFF4A876180D8DF300DB663B /* SCLURLMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F256180D62950034FF3F /* SCLURLMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFF4A877180D8DF300DB663B /* Sculptor.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F233180D5B080034FF3F /* Sculptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFC3F241180D5B080034FF3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC3F223180D5B080034FF3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC3F22A180D5B080034FF3F;
+			remoteInfo = Sculptor;
+		};
+		BFF4A731180D7F0600DB663B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC3C15F72B23004E8054;
+			remoteInfo = Mantle;
+		};
+		BFF4A733180D7F0600DB663B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC5415F72B23004E8054;
+			remoteInfo = "Mantle Tests";
+		};
+		BFF4A735180D7F0600DB663B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC7915F72BC7004E8054;
+			remoteInfo = "Mantle-iOS";
+		};
+		BFF4A737180D7F0600DB663B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC8715F72BC7004E8054;
+			remoteInfo = "Mantle-iOS Tests";
+		};
+		BFF4A739180D7F0600DB663B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0A56B461804B04900A84EDC;
+			remoteInfo = "Mantle-Mac";
+		};
+		BFF4A745180D7F4E00DB663B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D042FC7815F72BC7004E8054;
+			remoteInfo = "Mantle-iOS";
+		};
+		BFF4A7E1180D891F00DB663B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BFF4A7B6180D88C400DB663B;
+			remoteInfo = "AFNetworking iOS";
+		};
+		BFF4A7E3180D893200DB663B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BFF4A7B5180D88C400DB663B;
+			remoteInfo = "AFNetworking iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFC3F22B180D5B080034FF3F /* libSculptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSculptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC3F22E180D5B080034FF3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFC3F232180D5B080034FF3F /* Sculptor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sculptor-Prefix.pch"; sourceTree = "<group>"; };
+		BFC3F233180D5B080034FF3F /* Sculptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sculptor.h; sourceTree = "<group>"; };
+		BFC3F23B180D5B080034FF3F /* SculptorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SculptorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC3F23C180D5B080034FF3F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BFC3F246180D5B080034FF3F /* SculptorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SculptorTests-Info.plist"; sourceTree = "<group>"; };
+		BFC3F248180D5B080034FF3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFC3F24A180D5B080034FF3F /* SculptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SculptorTests.m; sourceTree = "<group>"; };
+		BFC3F254180D62950034FF3F /* SCLMantleResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLMantleResponseSerializer.h; sourceTree = "<group>"; };
+		BFC3F255180D62950034FF3F /* SCLMantleResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLMantleResponseSerializer.m; sourceTree = "<group>"; };
+		BFC3F256180D62950034FF3F /* SCLURLMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLURLMatcher.h; sourceTree = "<group>"; };
+		BFC3F257180D62950034FF3F /* SCLURLMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLURLMatcher.m; sourceTree = "<group>"; };
+		BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = External/Mantle/Mantle.xcodeproj; sourceTree = "<group>"; };
+		BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SculptorDependencies.xcodeproj; path = External/SculptorDependencies/SculptorDependencies.xcodeproj; sourceTree = "<group>"; };
+		BFF4A8A7180D92FE00DB663B /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		BFF4A8A9180D92FE00DB663B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		BFF4A8AA180D92FE00DB663B /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		BFF4A8AB180D92FE00DB663B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		BFF4A8AC180D92FE00DB663B /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		BFF4A8AE180D92FE00DB663B /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		BFF4A8AF180D92FE00DB663B /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		BFF4A8B1180D92FE00DB663B /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		BFF4A8B2180D92FE00DB663B /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		BFF4A8B3180D92FE00DB663B /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		BFF4A8B5180D92FE00DB663B /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		BFF4A8B6180D92FE00DB663B /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		BFF4A8B7180D92FE00DB663B /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		BFF4A8B8180D92FE00DB663B /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		BFF4A8B9180D92FE00DB663B /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		BFF4A8BA180D92FE00DB663B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFC3F228180D5B080034FF3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3F22F180D5B080034FF3F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC3F238180D5B080034FF3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3F23D180D5B080034FF3F /* XCTest.framework in Frameworks */,
+				BFC3F23E180D5B080034FF3F /* Foundation.framework in Frameworks */,
+				BFC3F243180D5B080034FF3F /* libSculptor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFC3F222180D5B080034FF3F = {
+			isa = PBXGroup;
+			children = (
+				BFC3F230180D5B080034FF3F /* Sculptor */,
+				BFC3F244180D5B080034FF3F /* SculptorTests */,
+				BFF4A8A5180D92FE00DB663B /* Configuration */,
+				BFC3F22D180D5B080034FF3F /* Frameworks */,
+				BFC3F22C180D5B080034FF3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFC3F22C180D5B080034FF3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3F22B180D5B080034FF3F /* libSculptor.a */,
+				BFC3F23B180D5B080034FF3F /* SculptorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFC3F22D180D5B080034FF3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */,
+				BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */,
+				BFC3F22E180D5B080034FF3F /* Foundation.framework */,
+				BFC3F23C180D5B080034FF3F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFC3F230180D5B080034FF3F /* Sculptor */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3F233180D5B080034FF3F /* Sculptor.h */,
+				BFC3F254180D62950034FF3F /* SCLMantleResponseSerializer.h */,
+				BFC3F255180D62950034FF3F /* SCLMantleResponseSerializer.m */,
+				BFC3F256180D62950034FF3F /* SCLURLMatcher.h */,
+				BFC3F257180D62950034FF3F /* SCLURLMatcher.m */,
+				BFC3F231180D5B080034FF3F /* Supporting Files */,
+			);
+			path = Sculptor;
+			sourceTree = "<group>";
+		};
+		BFC3F231180D5B080034FF3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3F232180D5B080034FF3F /* Sculptor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFC3F244180D5B080034FF3F /* SculptorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3F24A180D5B080034FF3F /* SculptorTests.m */,
+				BFC3F245180D5B080034FF3F /* Supporting Files */,
+			);
+			path = SculptorTests;
+			sourceTree = "<group>";
+		};
+		BFC3F245180D5B080034FF3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3F246180D5B080034FF3F /* SculptorTests-Info.plist */,
+				BFC3F247180D5B080034FF3F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFF4A728180D7F0500DB663B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A732180D7F0600DB663B /* Mantle.framework */,
+				BFF4A734180D7F0600DB663B /* Mantle Tests.octest */,
+				BFF4A736180D7F0600DB663B /* libMantle-iOS.a */,
+				BFF4A738180D7F0600DB663B /* Mantle-iOS Tests.octest */,
+				BFF4A73A180D7F0600DB663B /* libMantle-Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF4A7DE180D891F00DB663B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A7E2180D891F00DB663B /* libAFNetworking.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF4A8A5180D92FE00DB663B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A8A6180D92FE00DB663B /* Base */,
+				BFF4A8B0180D92FE00DB663B /* iOS */,
+				BFF4A8B4180D92FE00DB663B /* Mac OS X */,
+				BFF4A8BA180D92FE00DB663B /* README.md */,
+			);
+			name = Configuration;
+			path = External/Mantle/Configuration;
+			sourceTree = "<group>";
+		};
+		BFF4A8A6180D92FE00DB663B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A8A7180D92FE00DB663B /* Common.xcconfig */,
+				BFF4A8A8180D92FE00DB663B /* Configurations */,
+				BFF4A8AD180D92FE00DB663B /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BFF4A8A8180D92FE00DB663B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A8A9180D92FE00DB663B /* Debug.xcconfig */,
+				BFF4A8AA180D92FE00DB663B /* Profile.xcconfig */,
+				BFF4A8AB180D92FE00DB663B /* Release.xcconfig */,
+				BFF4A8AC180D92FE00DB663B /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		BFF4A8AD180D92FE00DB663B /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A8AE180D92FE00DB663B /* Application.xcconfig */,
+				BFF4A8AF180D92FE00DB663B /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		BFF4A8B0180D92FE00DB663B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A8B1180D92FE00DB663B /* iOS-Application.xcconfig */,
+				BFF4A8B2180D92FE00DB663B /* iOS-Base.xcconfig */,
+				BFF4A8B3180D92FE00DB663B /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		BFF4A8B4180D92FE00DB663B /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				BFF4A8B5180D92FE00DB663B /* Mac-Application.xcconfig */,
+				BFF4A8B6180D92FE00DB663B /* Mac-Base.xcconfig */,
+				BFF4A8B7180D92FE00DB663B /* Mac-DynamicLibrary.xcconfig */,
+				BFF4A8B8180D92FE00DB663B /* Mac-Framework.xcconfig */,
+				BFF4A8B9180D92FE00DB663B /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BFF4A874180D8DEC00DB663B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF4A877180D8DF300DB663B /* Sculptor.h in Headers */,
+				BFF4A875180D8DF300DB663B /* SCLMantleResponseSerializer.h in Headers */,
+				BFF4A876180D8DF300DB663B /* SCLURLMatcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BFC3F22A180D5B080034FF3F /* Sculptor iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC3F24E180D5B080034FF3F /* Build configuration list for PBXNativeTarget "Sculptor iOS" */;
+			buildPhases = (
+				BFC3F227180D5B080034FF3F /* Sources */,
+				BFC3F228180D5B080034FF3F /* Frameworks */,
+				BFF4A874180D8DEC00DB663B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF4A7E4180D893200DB663B /* PBXTargetDependency */,
+				BFF4A746180D7F4E00DB663B /* PBXTargetDependency */,
+			);
+			name = "Sculptor iOS";
+			productName = Sculptor;
+			productReference = BFC3F22B180D5B080034FF3F /* libSculptor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BFC3F23A180D5B080034FF3F /* SculptorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC3F251180D5B080034FF3F /* Build configuration list for PBXNativeTarget "SculptorTests" */;
+			buildPhases = (
+				BFC3F237180D5B080034FF3F /* Sources */,
+				BFC3F238180D5B080034FF3F /* Frameworks */,
+				BFC3F239180D5B080034FF3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC3F242180D5B080034FF3F /* PBXTargetDependency */,
+			);
+			name = SculptorTests;
+			productName = SculptorTests;
+			productReference = BFC3F23B180D5B080034FF3F /* SculptorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFC3F223180D5B080034FF3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "David Caunt";
+			};
+			buildConfigurationList = BFC3F226180D5B080034FF3F /* Build configuration list for PBXProject "Sculptor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFC3F222180D5B080034FF3F;
+			productRefGroup = BFC3F22C180D5B080034FF3F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BFF4A728180D7F0500DB663B /* Products */;
+					ProjectRef = BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */;
+				},
+				{
+					ProductGroup = BFF4A7DE180D891F00DB663B /* Products */;
+					ProjectRef = BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BFC3F22A180D5B080034FF3F /* Sculptor iOS */,
+				BFC3F23A180D5B080034FF3F /* SculptorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BFF4A732180D7F0600DB663B /* Mantle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Mantle.framework;
+			remoteRef = BFF4A731180D7F0600DB663B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BFF4A734180D7F0600DB663B /* Mantle Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mantle Tests.octest";
+			remoteRef = BFF4A733180D7F0600DB663B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BFF4A736180D7F0600DB663B /* libMantle-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMantle-iOS.a";
+			remoteRef = BFF4A735180D7F0600DB663B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BFF4A738180D7F0600DB663B /* Mantle-iOS Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mantle-iOS Tests.octest";
+			remoteRef = BFF4A737180D7F0600DB663B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BFF4A73A180D7F0600DB663B /* libMantle-Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMantle-Mac.a";
+			remoteRef = BFF4A739180D7F0600DB663B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BFF4A7E2180D891F00DB663B /* libAFNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAFNetworking.a;
+			remoteRef = BFF4A7E1180D891F00DB663B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC3F239180D5B080034FF3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3F249180D5B080034FF3F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFC3F227180D5B080034FF3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3F258180D62950034FF3F /* SCLMantleResponseSerializer.m in Sources */,
+				BFC3F259180D62950034FF3F /* SCLURLMatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC3F237180D5B080034FF3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3F24B180D5B080034FF3F /* SculptorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFC3F242180D5B080034FF3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC3F22A180D5B080034FF3F /* Sculptor iOS */;
+			targetProxy = BFC3F241180D5B080034FF3F /* PBXContainerItemProxy */;
+		};
+		BFF4A746180D7F4E00DB663B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mantle-iOS";
+			targetProxy = BFF4A745180D7F4E00DB663B /* PBXContainerItemProxy */;
+		};
+		BFF4A7E4180D893200DB663B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AFNetworking iOS";
+			targetProxy = BFF4A7E3180D893200DB663B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFC3F247180D5B080034FF3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC3F248180D5B080034FF3F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFC3F24C180D5B080034FF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF4A8A9180D92FE00DB663B /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFC3F24D180D5B080034FF3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF4A8AB180D92FE00DB663B /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFC3F24F180D5B080034FF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF4A8B3180D92FE00DB663B /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Sculptor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sculptor/Sculptor-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Sculptor;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv6 armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		BFC3F250180D5B080034FF3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF4A8B3180D92FE00DB663B /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Sculptor.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sculptor/Sculptor-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Sculptor;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv6 armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		BFC3F252180D5B080034FF3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF4A8B1180D92FE00DB663B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sculptor/Sculptor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BFC3F253180D5B080034FF3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF4A8B1180D92FE00DB663B /* iOS-Application.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sculptor/Sculptor-Prefix.pch";
+				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFC3F226180D5B080034FF3F /* Build configuration list for PBXProject "Sculptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC3F24C180D5B080034FF3F /* Debug */,
+				BFC3F24D180D5B080034FF3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC3F24E180D5B080034FF3F /* Build configuration list for PBXNativeTarget "Sculptor iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC3F24F180D5B080034FF3F /* Debug */,
+				BFC3F250180D5B080034FF3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC3F251180D5B080034FF3F /* Build configuration list for PBXNativeTarget "SculptorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC3F252180D5B080034FF3F /* Debug */,
+				BFC3F253180D5B080034FF3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFC3F223180D5B080034FF3F /* Project object */;
+}
