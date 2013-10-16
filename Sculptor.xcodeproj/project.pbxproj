@@ -11,8 +11,6 @@
 		BF6BD7CD180F16CF00882A58 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F23C180D5B080034FF3F /* XCTest.framework */; };
 		BF6BD7CE180F16CF00882A58 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B8180F16CF00882A58 /* Cocoa.framework */; };
 		BF6BD7D1180F16CF00882A58 /* Sculptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B7180F16CF00882A58 /* Sculptor.framework */; };
-		BF6BD7D7180F16CF00882A58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF6BD7D5180F16CF00882A58 /* InfoPlist.strings */; };
-		BF6BD7D9180F16CF00882A58 /* Sculptor_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6BD7D8180F16CF00882A58 /* Sculptor_MacTests.m */; };
 		BFC3F22F180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
 		BFC3F23D180D5B080034FF3F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F23C180D5B080034FF3F /* XCTest.framework */; };
 		BFC3F23E180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
@@ -106,15 +104,12 @@
 		BF6BD7BC180F16CF00882A58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BF6BD7BD180F16CF00882A58 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		BF6BD7CC180F16CF00882A58 /* Sculptor MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sculptor MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF6BD7D4180F16CF00882A58 /* Sculptor MacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sculptor MacTests-Info.plist"; sourceTree = "<group>"; };
-		BF6BD7D6180F16CF00882A58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BF6BD7D8180F16CF00882A58 /* Sculptor_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sculptor_MacTests.m; sourceTree = "<group>"; };
 		BF6BD7E4180F17DC00882A58 /* Sculptor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sculptor-Info.plist"; sourceTree = "<group>"; };
 		BFC3F22B180D5B080034FF3F /* libSculptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSculptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3F22E180D5B080034FF3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFC3F232180D5B080034FF3F /* Sculptor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sculptor-Prefix.pch"; sourceTree = "<group>"; };
 		BFC3F233180D5B080034FF3F /* Sculptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sculptor.h; sourceTree = "<group>"; };
-		BFC3F23B180D5B080034FF3F /* SculptorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SculptorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sculptor iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3F23C180D5B080034FF3F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BFC3F246180D5B080034FF3F /* SculptorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SculptorTests-Info.plist"; sourceTree = "<group>"; };
 		BFC3F248180D5B080034FF3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -193,30 +188,11 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		BF6BD7D2180F16CF00882A58 /* Sculptor MacTests */ = {
-			isa = PBXGroup;
-			children = (
-				BF6BD7D8180F16CF00882A58 /* Sculptor_MacTests.m */,
-				BF6BD7D3180F16CF00882A58 /* Supporting Files */,
-			);
-			path = "Sculptor MacTests";
-			sourceTree = "<group>";
-		};
-		BF6BD7D3180F16CF00882A58 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BF6BD7D4180F16CF00882A58 /* Sculptor MacTests-Info.plist */,
-				BF6BD7D5180F16CF00882A58 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		BFC3F222180D5B080034FF3F = {
 			isa = PBXGroup;
 			children = (
 				BFC3F230180D5B080034FF3F /* Sculptor */,
 				BFC3F244180D5B080034FF3F /* SculptorTests */,
-				BF6BD7D2180F16CF00882A58 /* Sculptor MacTests */,
 				BFF4A8A5180D92FE00DB663B /* Configuration */,
 				BFC3F22D180D5B080034FF3F /* Frameworks */,
 				BFC3F22C180D5B080034FF3F /* Products */,
@@ -227,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				BFC3F22B180D5B080034FF3F /* libSculptor.a */,
-				BFC3F23B180D5B080034FF3F /* SculptorTests.xctest */,
+				BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.xctest */,
 				BF6BD7B7180F16CF00882A58 /* Sculptor.framework */,
 				BF6BD7CC180F16CF00882A58 /* Sculptor MacTests.xctest */,
 			);
@@ -412,9 +388,9 @@
 			productReference = BF6BD7B7180F16CF00882A58 /* Sculptor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BF6BD7CB180F16CF00882A58 /* Sculptor MacTests */ = {
+		BF6BD7CB180F16CF00882A58 /* Sculptor Mac Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF6BD7E3180F16CF00882A58 /* Build configuration list for PBXNativeTarget "Sculptor MacTests" */;
+			buildConfigurationList = BF6BD7E3180F16CF00882A58 /* Build configuration list for PBXNativeTarget "Sculptor Mac Tests" */;
 			buildPhases = (
 				BF6BD7C8180F16CF00882A58 /* Sources */,
 				BF6BD7C9180F16CF00882A58 /* Frameworks */,
@@ -425,7 +401,7 @@
 			dependencies = (
 				BF6BD7D0180F16CF00882A58 /* PBXTargetDependency */,
 			);
-			name = "Sculptor MacTests";
+			name = "Sculptor Mac Tests";
 			productName = "Sculptor MacTests";
 			productReference = BF6BD7CC180F16CF00882A58 /* Sculptor MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -449,9 +425,9 @@
 			productReference = BFC3F22B180D5B080034FF3F /* libSculptor.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BFC3F23A180D5B080034FF3F /* SculptorTests */ = {
+		BFC3F23A180D5B080034FF3F /* Sculptor iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFC3F251180D5B080034FF3F /* Build configuration list for PBXNativeTarget "SculptorTests" */;
+			buildConfigurationList = BFC3F251180D5B080034FF3F /* Build configuration list for PBXNativeTarget "Sculptor iOS Tests" */;
 			buildPhases = (
 				BFC3F237180D5B080034FF3F /* Sources */,
 				BFC3F238180D5B080034FF3F /* Frameworks */,
@@ -462,9 +438,9 @@
 			dependencies = (
 				BFC3F242180D5B080034FF3F /* PBXTargetDependency */,
 			);
-			name = SculptorTests;
+			name = "Sculptor iOS Tests";
 			productName = SculptorTests;
-			productReference = BFC3F23B180D5B080034FF3F /* SculptorTests.xctest */;
+			productReference = BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -507,9 +483,9 @@
 			projectRoot = "";
 			targets = (
 				BFC3F22A180D5B080034FF3F /* Sculptor iOS */,
-				BFC3F23A180D5B080034FF3F /* SculptorTests */,
+				BFC3F23A180D5B080034FF3F /* Sculptor iOS Tests */,
 				BF6BD7B6180F16CF00882A58 /* Sculptor Mac */,
-				BF6BD7CB180F16CF00882A58 /* Sculptor MacTests */,
+				BF6BD7CB180F16CF00882A58 /* Sculptor Mac Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -571,7 +547,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6BD7D7180F16CF00882A58 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +572,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6BD7D9180F16CF00882A58 /* Sculptor_MacTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,14 +618,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BF6BD7D5180F16CF00882A58 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF6BD7D6180F16CF00882A58 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		BFC3F247180D5B080034FF3F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -731,7 +697,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Sculptor MacTests/Sculptor MacTests-Info.plist";
+				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -754,7 +720,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sculptor Mac/Sculptor Mac-Prefix.pch";
-				INFOPLIST_FILE = "Sculptor MacTests/Sculptor MacTests-Info.plist";
+				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -869,7 +835,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFF4A8B1180D92FE00DB663B /* iOS-Application.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sculptor Mac.framework/Versions/A/Sculptor Mac";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -892,7 +858,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFF4A8B1180D92FE00DB663B /* iOS-Application.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sculptor Mac.framework/Versions/A/Sculptor Mac";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -918,7 +884,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		BF6BD7E3180F16CF00882A58 /* Build configuration list for PBXNativeTarget "Sculptor MacTests" */ = {
+		BF6BD7E3180F16CF00882A58 /* Build configuration list for PBXNativeTarget "Sculptor Mac Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF6BD7DC180F16CF00882A58 /* Debug */,
@@ -944,7 +910,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFC3F251180D5B080034FF3F /* Build configuration list for PBXNativeTarget "SculptorTests" */ = {
+		BFC3F251180D5B080034FF3F /* Build configuration list for PBXNativeTarget "Sculptor iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFC3F252180D5B080034FF3F /* Debug */,
