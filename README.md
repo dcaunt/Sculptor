@@ -84,6 +84,8 @@ Finally, the matcher uses the NSURL in the NSURLResponse provided by AFNetworkin
 
 ## Installation
 
+Sculptor supports both iOS and Mac.
+
 Install via CocoaPods:
 
 ```
@@ -96,3 +98,6 @@ Then import the header:
 ```objective-c
 #import <Sculptor/Sculptor.h>
 ```
+
+## TODO
+* Unit Tests
