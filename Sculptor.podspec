@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Sculptor"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "An AFNetworking response serializer for Mantle."
  
   s.homepage     = "https://github.com/dcaunt/Sculptor"
