@@ -87,7 +87,7 @@ Finally, the matcher uses the NSURL in the NSURLResponse provided by AFNetworkin
 Install via CocoaPods:
 
 ```
-pod 'Sculptor', '0.1'
+pod 'Sculptor', '~> 0.1'
 ```
 
 Or clone the repo and drag Sculptor's project file into your project file or workspace.
