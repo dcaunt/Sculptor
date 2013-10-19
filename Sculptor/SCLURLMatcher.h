@@ -27,8 +27,9 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "SCLMantleResponseSerializer.h"
 
-@interface SCLURLMatcher : NSObject
+@interface SCLURLMatcher : NSObject <SCLURLResponseMatcher>
 
 + (instancetype)matcher;
 + (instancetype)matcherWithPathPrefix:(NSString *)pathPrefix;

@@ -10,9 +10,13 @@
 
 @class SCLURLMatcher;
 
-@interface SCLMantleResponseSerializer : AFJSONResponseSerializer
-@property (nonatomic, strong, readonly) SCLURLMatcher *matcher;
+@protocol SCLURLResponseMatcher <NSObject>
+- (Class)classForURLResponse:(NSURLResponse *)URLResponse;
+@end
 
-+ (instancetype)serializerWithUriMatcher:(SCLURLMatcher *)matcher readingOptions:(NSJSONReadingOptions)readingOptions;
+@interface SCLMantleResponseSerializer : AFJSONResponseSerializer
+@property (nonatomic, strong, readonly) id<SCLURLResponseMatcher> matcher;
+
++ (instancetype)serializerWithUriMatcher:(id<SCLURLResponseMatcher>)matcher readingOptions:(NSJSONReadingOptions)readingOptions;
 
 @end

@@ -195,4 +195,11 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 	return [NSString stringWithFormat:@"<%@: %p, type:%ld, text:%@, matchClass:%@, children:%@>", self.class, self, (long)self.matcherType, self.text, NSStringFromClass(self.matchClass), self.children];
 }
 
+#pragma mark - SCLURLResponseMatcher
+
+- (Class)classForURLResponse:(NSURLResponse *)URLResponse
+{
+	return [self match:URLResponse.URL];
+}
+
 @end

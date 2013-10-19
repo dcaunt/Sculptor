@@ -12,12 +12,12 @@
 #import "SCLURLMatcher.h"
 
 @interface SCLMantleResponseSerializer ()
-@property (nonatomic, strong, readwrite) SCLURLMatcher *matcher;
+@property (nonatomic, strong, readwrite) id<SCLURLResponseMatcher> matcher;
 @end
 
 @implementation SCLMantleResponseSerializer
 
-+ (instancetype)serializerWithUriMatcher:(SCLURLMatcher *)matcher readingOptions:(NSJSONReadingOptions)readingOptions
++ (instancetype)serializerWithUriMatcher:(id<SCLURLResponseMatcher>)matcher readingOptions:(NSJSONReadingOptions)readingOptions
 {
 	SCLMantleResponseSerializer *responseSerializer = [self serializerWithReadingOptions:readingOptions];
 	responseSerializer.matcher = matcher;
@@ -34,7 +34,7 @@
 		return nil;
 	}
 	
-	Class modelClass = [self.matcher match:response.URL];
+	Class modelClass = [self.matcher classForURLResponse:response];
 	NSAssert(modelClass, @"Unable to match response URL %@ to a model class", response.URL);
 
 	NSValueTransformer *JSONTransformer = nil;

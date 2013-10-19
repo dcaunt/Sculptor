@@ -103,7 +103,7 @@
 		BF6BD7BB180F16CF00882A58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF6BD7BC180F16CF00882A58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BF6BD7BD180F16CF00882A58 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		BF6BD7CC180F16CF00882A58 /* Sculptor MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sculptor MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6BD7CC180F16CF00882A58 /* Sculptor MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Sculptor MacTests.xctest"; path = "Sculptor Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6BD7E4180F17DC00882A58 /* Sculptor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sculptor-Info.plist"; sourceTree = "<group>"; };
 		BFC3F22B180D5B080034FF3F /* libSculptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSculptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3F22E180D5B080034FF3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -883,6 +883,7 @@
 				BF6BD7DB180F16CF00882A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF6BD7E3180F16CF00882A58 /* Build configuration list for PBXNativeTarget "Sculptor Mac Tests" */ = {
 			isa = XCConfigurationList;
@@ -891,6 +892,7 @@
 				BF6BD7DD180F16CF00882A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC3F226180D5B080034FF3F /* Build configuration list for PBXProject "Sculptor" */ = {
 			isa = XCConfigurationList;
