@@ -88,8 +88,8 @@ Sculptor supports both iOS and Mac.
 
 Install via CocoaPods:
 
-```
-pod 'Sculptor', '~> 0.1'
+```ruby
+pod 'Sculptor', '~> 0.2'
 ```
 
 Or clone the repo and drag Sculptor's project file into your project file or workspace.
