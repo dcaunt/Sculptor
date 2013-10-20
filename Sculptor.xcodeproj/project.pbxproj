@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF48549018145A7E005704A5 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD9A51814466100882A58 /* AFNetworking.framework */; };
+		BF48549118145A88005704A5 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF4A732180D7F0600DB663B /* Mantle.framework */; };
 		BF6BD7B9180F16CF00882A58 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B8180F16CF00882A58 /* Cocoa.framework */; };
 		BF6BD7CD180F16CF00882A58 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F23C180D5B080034FF3F /* XCTest.framework */; };
 		BF6BD7CE180F16CF00882A58 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B8180F16CF00882A58 /* Cocoa.framework */; };
 		BF6BD7D1180F16CF00882A58 /* Sculptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B7180F16CF00882A58 /* Sculptor.framework */; };
+		BF6BD94D1814453A00882A58 /* Sculptor.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F233180D5B080034FF3F /* Sculptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF6BD94E1814453A00882A58 /* SCLMantleResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F254180D62950034FF3F /* SCLMantleResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF6BD94F1814453A00882A58 /* SCLURLMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F256180D62950034FF3F /* SCLURLMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF6BD9BD1814526C00882A58 /* SCLMantleResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F255180D62950034FF3F /* SCLMantleResponseSerializer.m */; };
+		BF6BD9BE1814526C00882A58 /* SCLURLMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F257180D62950034FF3F /* SCLURLMatcher.m */; };
 		BFC3F22F180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
 		BFC3F23D180D5B080034FF3F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F23C180D5B080034FF3F /* XCTest.framework */; };
 		BFC3F23E180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
@@ -31,6 +38,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = BF6BD7B6180F16CF00882A58;
 			remoteInfo = "Sculptor Mac";
+		};
+		BF6BD9A11814466100882A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BF6BD964181445D700882A58;
+			remoteInfo = "AFNetworking Mac";
+		};
+		BF6BD9A41814466100882A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF6BD965181445D700882A58;
+			remoteInfo = "AFNetworking Mac";
+		};
+		BF6BD9A61814466400882A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D042FC3B15F72B23004E8054;
+			remoteInfo = Mantle;
 		};
 		BFC3F241180D5B080034FF3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -103,7 +131,7 @@
 		BF6BD7BB180F16CF00882A58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF6BD7BC180F16CF00882A58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BF6BD7BD180F16CF00882A58 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		BF6BD7CC180F16CF00882A58 /* Sculptor MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Sculptor MacTests.xctest"; path = "Sculptor Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sculptor Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6BD7E4180F17DC00882A58 /* Sculptor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sculptor-Info.plist"; sourceTree = "<group>"; };
 		BFC3F22B180D5B080034FF3F /* libSculptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSculptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3F22E180D5B080034FF3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +171,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF48549118145A88005704A5 /* Mantle.framework in Frameworks */,
+				BF48549018145A7E005704A5 /* AFNetworking.framework in Frameworks */,
 				BF6BD7B9180F16CF00882A58 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +235,7 @@
 				BFC3F22B180D5B080034FF3F /* libSculptor.a */,
 				BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.xctest */,
 				BF6BD7B7180F16CF00882A58 /* Sculptor.framework */,
-				BF6BD7CC180F16CF00882A58 /* Sculptor MacTests.xctest */,
+				BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				BFF4A7E2180D891F00DB663B /* libAFNetworking.a */,
+				BF6BD9A51814466100882A58 /* AFNetworking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,6 +385,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6BD94D1814453A00882A58 /* Sculptor.h in Headers */,
+				BF6BD94E1814453A00882A58 /* SCLMantleResponseSerializer.h in Headers */,
+				BF6BD94F1814453A00882A58 /* SCLURLMatcher.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +416,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				BF6BD9A21814466100882A58 /* PBXTargetDependency */,
+				BF6BD9A71814466400882A58 /* PBXTargetDependency */,
 			);
 			name = "Sculptor Mac";
 			productName = "Sculptor Mac";
@@ -403,7 +439,7 @@
 			);
 			name = "Sculptor Mac Tests";
 			productName = "Sculptor MacTests";
-			productReference = BF6BD7CC180F16CF00882A58 /* Sculptor MacTests.xctest */;
+			productReference = BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BFC3F22A180D5B080034FF3F /* Sculptor iOS */ = {
@@ -491,6 +527,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		BF6BD9A51814466100882A58 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = BF6BD9A41814466100882A58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		BFF4A732180D7F0600DB663B /* Mantle.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -565,6 +608,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6BD9BD1814526C00882A58 /* SCLMantleResponseSerializer.m in Sources */,
+				BF6BD9BE1814526C00882A58 /* SCLURLMatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +644,16 @@
 			isa = PBXTargetDependency;
 			target = BF6BD7B6180F16CF00882A58 /* Sculptor Mac */;
 			targetProxy = BF6BD7CF180F16CF00882A58 /* PBXContainerItemProxy */;
+		};
+		BF6BD9A21814466100882A58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AFNetworking Mac";
+			targetProxy = BF6BD9A11814466100882A58 /* PBXContainerItemProxy */;
+		};
+		BF6BD9A71814466400882A58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mantle;
+			targetProxy = BF6BD9A61814466400882A58 /* PBXContainerItemProxy */;
 		};
 		BFC3F242180D5B080034FF3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
