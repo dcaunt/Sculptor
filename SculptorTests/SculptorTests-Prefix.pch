@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'SculptorTests' target in the 'Sculptor' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <Sculptor/Sculptor.h>
+
+	#import "Specta.h"
+
+	#define EXP_SHORTHAND
+	#import "Expecta.h"
+#endif
