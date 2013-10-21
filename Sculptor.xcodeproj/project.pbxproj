@@ -9,23 +9,36 @@
 /* Begin PBXBuildFile section */
 		BF48549018145A7E005704A5 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD9A51814466100882A58 /* AFNetworking.framework */; };
 		BF48549118145A88005704A5 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF4A732180D7F0600DB663B /* Mantle.framework */; };
+		BF4854D718148065005704A5 /* SCLURLMatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4854D618148065005704A5 /* SCLURLMatcherSpec.m */; };
+		BF4854D818148065005704A5 /* SCLURLMatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4854D618148065005704A5 /* SCLURLMatcherSpec.m */; };
 		BF6BD7B9180F16CF00882A58 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B8180F16CF00882A58 /* Cocoa.framework */; };
 		BF6BD7CD180F16CF00882A58 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F23C180D5B080034FF3F /* XCTest.framework */; };
 		BF6BD7CE180F16CF00882A58 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B8180F16CF00882A58 /* Cocoa.framework */; };
-		BF6BD7D1180F16CF00882A58 /* Sculptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B7180F16CF00882A58 /* Sculptor.framework */; };
 		BF6BD94D1814453A00882A58 /* Sculptor.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F233180D5B080034FF3F /* Sculptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF6BD94E1814453A00882A58 /* SCLMantleResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F254180D62950034FF3F /* SCLMantleResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF6BD94F1814453A00882A58 /* SCLURLMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F256180D62950034FF3F /* SCLURLMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF6BD9BD1814526C00882A58 /* SCLMantleResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F255180D62950034FF3F /* SCLMantleResponseSerializer.m */; };
 		BF6BD9BE1814526C00882A58 /* SCLURLMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F257180D62950034FF3F /* SCLURLMatcher.m */; };
+		BFA8A5B7181565F20086934D /* libExpecta-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA8A5B6181565F20086934D /* libExpecta-macosx.a */; };
+		BFA8A5B8181566160086934D /* libSpecta-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA8A5AF181565C60086934D /* libSpecta-macosx.a */; };
+		BFA8A5BD181566690086934D /* Sculptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B7180F16CF00882A58 /* Sculptor.framework */; };
+		BFA8A5C0181566970086934D /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD9A51814466100882A58 /* AFNetworking.framework */; };
+		BFA8A5C1181566970086934D /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF4A732180D7F0600DB663B /* Mantle.framework */; };
+		BFA8A5C2181566A30086934D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4854DD18153BAC005704A5 /* SenTestingKit.framework */; };
+		BFA9E84E1815422E0061D534 /* libSpecta-ios-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA9E84D1815422E0061D534 /* libSpecta-ios-universal.a */; };
+		BFA9E84F1815423D0061D534 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4854DD18153BAC005704A5 /* SenTestingKit.framework */; };
+		BFA9E8501815424F0061D534 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF4A7E2180D891F00DB663B /* libAFNetworking.a */; };
+		BFA9E851181542570061D534 /* libMantle-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF4A736180D7F0600DB663B /* libMantle-iOS.a */; };
+		BFA9E853181543AA0061D534 /* libExpecta-ios-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA9E852181543AA0061D534 /* libExpecta-ios-universal.a */; };
 		BFC3F22F180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
 		BFC3F23D180D5B080034FF3F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F23C180D5B080034FF3F /* XCTest.framework */; };
 		BFC3F23E180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
 		BFC3F243180D5B080034FF3F /* libSculptor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22B180D5B080034FF3F /* libSculptor.a */; };
 		BFC3F249180D5B080034FF3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFC3F247180D5B080034FF3F /* InfoPlist.strings */; };
-		BFC3F24B180D5B080034FF3F /* SculptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F24A180D5B080034FF3F /* SculptorTests.m */; };
 		BFC3F258180D62950034FF3F /* SCLMantleResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F255180D62950034FF3F /* SCLMantleResponseSerializer.m */; };
 		BFC3F259180D62950034FF3F /* SCLURLMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC3F257180D62950034FF3F /* SCLURLMatcher.m */; };
+		BFEC08D618155302009A2FC5 /* SCLTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEC08D518155302009A2FC5 /* SCLTestModel.m */; };
+		BFEC08D718155302009A2FC5 /* SCLTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEC08D518155302009A2FC5 /* SCLTestModel.m */; };
 		BFF4A875180D8DF300DB663B /* SCLMantleResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F254180D62950034FF3F /* SCLMantleResponseSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFF4A876180D8DF300DB663B /* SCLURLMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F256180D62950034FF3F /* SCLURLMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFF4A877180D8DF300DB663B /* Sculptor.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC3F233180D5B080034FF3F /* Sculptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -126,26 +139,87 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF4854D51814802A005704A5 /* SculptorTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SculptorTests-Prefix.pch"; sourceTree = "<group>"; };
+		BF4854D618148065005704A5 /* SCLURLMatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLURLMatcherSpec.m; sourceTree = "<group>"; };
+		BF4854DD18153BAC005704A5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BF6BD7B7180F16CF00882A58 /* Sculptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sculptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6BD7B8180F16CF00882A58 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		BF6BD7BB180F16CF00882A58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF6BD7BC180F16CF00882A58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BF6BD7BD180F16CF00882A58 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sculptor Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sculptor Mac Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6BD7E4180F17DC00882A58 /* Sculptor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sculptor-Info.plist"; sourceTree = "<group>"; };
+		BFA8A5AF181565C60086934D /* libSpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-macosx.a"; path = "SculptorTests/specta/products/libSpecta-macosx.a"; sourceTree = "<group>"; };
+		BFA8A5B6181565F20086934D /* libExpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-macosx.a"; path = "SculptorTests/expecta/products/libExpecta-macosx.a"; sourceTree = "<group>"; };
+		BFA9E84D1815422E0061D534 /* libSpecta-ios-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-ios-universal.a"; path = "SculptorTests/specta/products/libSpecta-ios-universal.a"; sourceTree = "<group>"; };
+		BFA9E852181543AA0061D534 /* libExpecta-ios-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-ios-universal.a"; path = "SculptorTests/expecta/products/libExpecta-ios-universal.a"; sourceTree = "<group>"; };
+		BFA9E855181545750061D534 /* SenTestCase+Specta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SenTestCase+Specta.h"; path = "specta/products/SenTestCase+Specta.h"; sourceTree = "<group>"; };
+		BFA9E856181545760061D534 /* SenTestLog+Specta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SenTestLog+Specta.h"; path = "specta/products/SenTestLog+Specta.h"; sourceTree = "<group>"; };
+		BFA9E857181545760061D534 /* SenTestRun+Specta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SenTestRun+Specta.h"; path = "specta/products/SenTestRun+Specta.h"; sourceTree = "<group>"; };
+		BFA9E858181545760061D534 /* Specta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = specta/products/Specta.h; sourceTree = "<group>"; };
+		BFA9E859181545760061D534 /* SpectaSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectaSupport.h; path = specta/products/SpectaSupport.h; sourceTree = "<group>"; };
+		BFA9E85A181545760061D534 /* SpectaTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = specta/products/SpectaTypes.h; sourceTree = "<group>"; };
+		BFA9E85B181545760061D534 /* SpectaUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = specta/products/SpectaUtility.h; sourceTree = "<group>"; };
+		BFA9E85C181545760061D534 /* SPTDefaultReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTDefaultReporter.h; path = specta/products/SPTDefaultReporter.h; sourceTree = "<group>"; };
+		BFA9E85D181545760061D534 /* SPTExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = specta/products/SPTExample.h; sourceTree = "<group>"; };
+		BFA9E85E181545760061D534 /* SPTExampleGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = specta/products/SPTExampleGroup.h; sourceTree = "<group>"; };
+		BFA9E85F181545760061D534 /* SPTReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTReporter.h; path = specta/products/SPTReporter.h; sourceTree = "<group>"; };
+		BFA9E860181545760061D534 /* SPTSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSenTestCase.h; path = specta/products/SPTSenTestCase.h; sourceTree = "<group>"; };
+		BFA9E861181545760061D534 /* SPTSenTestInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSenTestInvocation.h; path = specta/products/SPTSenTestInvocation.h; sourceTree = "<group>"; };
+		BFA9E862181545760061D534 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = specta/products/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		BFA9E863181545760061D534 /* SPTSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = specta/products/SPTSpec.h; sourceTree = "<group>"; };
 		BFC3F22B180D5B080034FF3F /* libSculptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSculptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3F22E180D5B080034FF3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFC3F232180D5B080034FF3F /* Sculptor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sculptor-Prefix.pch"; sourceTree = "<group>"; };
 		BFC3F233180D5B080034FF3F /* Sculptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sculptor.h; sourceTree = "<group>"; };
-		BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sculptor iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sculptor iOS Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3F23C180D5B080034FF3F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BFC3F246180D5B080034FF3F /* SculptorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SculptorTests-Info.plist"; sourceTree = "<group>"; };
 		BFC3F248180D5B080034FF3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BFC3F24A180D5B080034FF3F /* SculptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SculptorTests.m; sourceTree = "<group>"; };
 		BFC3F254180D62950034FF3F /* SCLMantleResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLMantleResponseSerializer.h; sourceTree = "<group>"; };
 		BFC3F255180D62950034FF3F /* SCLMantleResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLMantleResponseSerializer.m; sourceTree = "<group>"; };
 		BFC3F256180D62950034FF3F /* SCLURLMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLURLMatcher.h; sourceTree = "<group>"; };
 		BFC3F257180D62950034FF3F /* SCLURLMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLURLMatcher.m; sourceTree = "<group>"; };
+		BFEC08AA18154752009A2FC5 /* EXPBackwardCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPBackwardCompatibility.h; path = expecta/products/EXPBackwardCompatibility.h; sourceTree = "<group>"; };
+		BFEC08AB18154752009A2FC5 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = expecta/products/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		BFEC08AC18154752009A2FC5 /* EXPDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = expecta/products/EXPDefines.h; sourceTree = "<group>"; };
+		BFEC08AD18154752009A2FC5 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = expecta/products/EXPDoubleTuple.h; sourceTree = "<group>"; };
+		BFEC08AE18154752009A2FC5 /* Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = expecta/products/Expecta.h; sourceTree = "<group>"; };
+		BFEC08AF18154752009A2FC5 /* ExpectaSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = expecta/products/ExpectaSupport.h; sourceTree = "<group>"; };
+		BFEC08B018154752009A2FC5 /* EXPExpect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = expecta/products/EXPExpect.h; sourceTree = "<group>"; };
+		BFEC08B118154752009A2FC5 /* EXPFloatTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = expecta/products/EXPFloatTuple.h; sourceTree = "<group>"; };
+		BFEC08B218154752009A2FC5 /* EXPMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = expecta/products/EXPMatcher.h; sourceTree = "<group>"; };
+		BFEC08B318154752009A2FC5 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = expecta/products/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		BFEC08B418154752009A2FC5 /* EXPMatchers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = expecta/products/EXPMatchers.h; sourceTree = "<group>"; };
+		BFEC08B518154752009A2FC5 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "expecta/products/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		BFEC08B618154752009A2FC5 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "expecta/products/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		BFEC08B718154752009A2FC5 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "expecta/products/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		BFEC08B818154752009A2FC5 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "expecta/products/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		BFEC08B918154752009A2FC5 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "expecta/products/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		BFEC08BA18154752009A2FC5 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "expecta/products/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		BFEC08BB18154752009A2FC5 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "expecta/products/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		BFEC08BC18154752009A2FC5 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "expecta/products/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		BFEC08BD18154752009A2FC5 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "expecta/products/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		BFEC08BE18154752009A2FC5 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "expecta/products/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		BFEC08BF18154752009A2FC5 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "expecta/products/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		BFEC08C018154752009A2FC5 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "expecta/products/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		BFEC08C118154752009A2FC5 /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "expecta/products/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		BFEC08C218154752009A2FC5 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "expecta/products/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		BFEC08C318154752009A2FC5 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "expecta/products/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		BFEC08C418154752009A2FC5 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "expecta/products/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		BFEC08C518154752009A2FC5 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "expecta/products/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		BFEC08C618154752009A2FC5 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "expecta/products/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		BFEC08C718154752009A2FC5 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "expecta/products/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		BFEC08C818154752009A2FC5 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "expecta/products/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		BFEC08C918154752009A2FC5 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = expecta/products/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		BFEC08CA18154752009A2FC5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = expecta/products/LICENSE; sourceTree = "<group>"; };
+		BFEC08CB18154752009A2FC5 /* NSObject+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "expecta/products/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		BFEC08CC18154752009A2FC5 /* NSValue+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "expecta/products/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		BFEC08CD18154752009A2FC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = expecta/products/README.md; sourceTree = "<group>"; };
+		BFEC08D21815477B009A2FC5 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = specta/products/LICENSE; sourceTree = "<group>"; };
+		BFEC08D31815477B009A2FC5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = specta/products/README.md; sourceTree = "<group>"; };
+		BFEC08D418155302009A2FC5 /* SCLTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLTestModel.h; sourceTree = "<group>"; };
+		BFEC08D518155302009A2FC5 /* SCLTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLTestModel.m; sourceTree = "<group>"; };
 		BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = External/Mantle/Mantle.xcodeproj; sourceTree = "<group>"; };
 		BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SculptorDependencies.xcodeproj; path = External/SculptorDependencies/SculptorDependencies.xcodeproj; sourceTree = "<group>"; };
 		BFF4A8A7180D92FE00DB663B /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
@@ -181,9 +255,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA8A5C2181566A30086934D /* SenTestingKit.framework in Frameworks */,
+				BFA8A5C0181566970086934D /* AFNetworking.framework in Frameworks */,
+				BFA8A5C1181566970086934D /* Mantle.framework in Frameworks */,
+				BFA8A5BD181566690086934D /* Sculptor.framework in Frameworks */,
 				BF6BD7CE180F16CF00882A58 /* Cocoa.framework in Frameworks */,
-				BF6BD7D1180F16CF00882A58 /* Sculptor.framework in Frameworks */,
 				BF6BD7CD180F16CF00882A58 /* XCTest.framework in Frameworks */,
+				BFA8A5B8181566160086934D /* libSpecta-macosx.a in Frameworks */,
+				BFA8A5B7181565F20086934D /* libExpecta-macosx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +278,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA9E853181543AA0061D534 /* libExpecta-ios-universal.a in Frameworks */,
+				BFA9E851181542570061D534 /* libMantle-iOS.a in Frameworks */,
+				BFA9E8501815424F0061D534 /* libAFNetworking.a in Frameworks */,
+				BFA9E84F1815423D0061D534 /* SenTestingKit.framework in Frameworks */,
 				BFC3F23D180D5B080034FF3F /* XCTest.framework in Frameworks */,
+				BFA9E84E1815422E0061D534 /* libSpecta-ios-universal.a in Frameworks */,
 				BFC3F23E180D5B080034FF3F /* Foundation.framework in Frameworks */,
 				BFC3F243180D5B080034FF3F /* libSculptor.a in Frameworks */,
 			);
@@ -208,6 +292,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF4854D418147FD3005704A5 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				BF4854D618148065005704A5 /* SCLURLMatcherSpec.m */,
+			);
+			name = Specs;
+			sourceTree = "<group>";
+		};
 		BF6BD7BA180F16CF00882A58 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +308,30 @@
 				BF6BD7BD180F16CF00882A58 /* AppKit.framework */,
 			);
 			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BFA9E854181545480061D534 /* Specta */ = {
+			isa = PBXGroup;
+			children = (
+				BFEC08D21815477B009A2FC5 /* LICENSE */,
+				BFEC08D31815477B009A2FC5 /* README.md */,
+				BFA9E855181545750061D534 /* SenTestCase+Specta.h */,
+				BFA9E856181545760061D534 /* SenTestLog+Specta.h */,
+				BFA9E857181545760061D534 /* SenTestRun+Specta.h */,
+				BFA9E858181545760061D534 /* Specta.h */,
+				BFA9E859181545760061D534 /* SpectaSupport.h */,
+				BFA9E85A181545760061D534 /* SpectaTypes.h */,
+				BFA9E85B181545760061D534 /* SpectaUtility.h */,
+				BFA9E85C181545760061D534 /* SPTDefaultReporter.h */,
+				BFA9E85D181545760061D534 /* SPTExample.h */,
+				BFA9E85E181545760061D534 /* SPTExampleGroup.h */,
+				BFA9E85F181545760061D534 /* SPTReporter.h */,
+				BFA9E860181545760061D534 /* SPTSenTestCase.h */,
+				BFA9E861181545760061D534 /* SPTSenTestInvocation.h */,
+				BFA9E862181545760061D534 /* SPTSharedExampleGroups.h */,
+				BFA9E863181545760061D534 /* SPTSpec.h */,
+			);
+			name = Specta;
 			sourceTree = "<group>";
 		};
 		BFC3F222180D5B080034FF3F = {
@@ -233,9 +349,9 @@
 			isa = PBXGroup;
 			children = (
 				BFC3F22B180D5B080034FF3F /* libSculptor.a */,
-				BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.xctest */,
+				BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.octest */,
 				BF6BD7B7180F16CF00882A58 /* Sculptor.framework */,
-				BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.xctest */,
+				BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +359,11 @@
 		BFC3F22D180D5B080034FF3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFA9E84D1815422E0061D534 /* libSpecta-ios-universal.a */,
+				BFA8A5AF181565C60086934D /* libSpecta-macosx.a */,
+				BFA9E852181543AA0061D534 /* libExpecta-ios-universal.a */,
+				BFA8A5B6181565F20086934D /* libExpecta-macosx.a */,
+				BF4854DD18153BAC005704A5 /* SenTestingKit.framework */,
 				BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */,
 				BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */,
 				BFC3F22E180D5B080034FF3F /* Foundation.framework */,
@@ -278,7 +399,9 @@
 		BFC3F244180D5B080034FF3F /* SculptorTests */ = {
 			isa = PBXGroup;
 			children = (
-				BFC3F24A180D5B080034FF3F /* SculptorTests.m */,
+				BF4854D418147FD3005704A5 /* Specs */,
+				BFA9E854181545480061D534 /* Specta */,
+				BFEC08A618154723009A2FC5 /* Expecta */,
 				BFC3F245180D5B080034FF3F /* Supporting Files */,
 			);
 			path = SculptorTests;
@@ -288,9 +411,55 @@
 			isa = PBXGroup;
 			children = (
 				BFC3F246180D5B080034FF3F /* SculptorTests-Info.plist */,
+				BF4854D51814802A005704A5 /* SculptorTests-Prefix.pch */,
 				BFC3F247180D5B080034FF3F /* InfoPlist.strings */,
+				BFEC08D418155302009A2FC5 /* SCLTestModel.h */,
+				BFEC08D518155302009A2FC5 /* SCLTestModel.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFEC08A618154723009A2FC5 /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				BFEC08CA18154752009A2FC5 /* LICENSE */,
+				BFEC08CD18154752009A2FC5 /* README.md */,
+				BFEC08AA18154752009A2FC5 /* EXPBackwardCompatibility.h */,
+				BFEC08AB18154752009A2FC5 /* EXPBlockDefinedMatcher.h */,
+				BFEC08AC18154752009A2FC5 /* EXPDefines.h */,
+				BFEC08AD18154752009A2FC5 /* EXPDoubleTuple.h */,
+				BFEC08AE18154752009A2FC5 /* Expecta.h */,
+				BFEC08AF18154752009A2FC5 /* ExpectaSupport.h */,
+				BFEC08B018154752009A2FC5 /* EXPExpect.h */,
+				BFEC08B118154752009A2FC5 /* EXPFloatTuple.h */,
+				BFEC08B218154752009A2FC5 /* EXPMatcher.h */,
+				BFEC08B318154752009A2FC5 /* EXPMatcherHelpers.h */,
+				BFEC08B418154752009A2FC5 /* EXPMatchers.h */,
+				BFEC08B518154752009A2FC5 /* EXPMatchers+beCloseTo.h */,
+				BFEC08B618154752009A2FC5 /* EXPMatchers+beFalsy.h */,
+				BFEC08B718154752009A2FC5 /* EXPMatchers+beGreaterThan.h */,
+				BFEC08B818154752009A2FC5 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				BFEC08B918154752009A2FC5 /* EXPMatchers+beIdenticalTo.h */,
+				BFEC08BA18154752009A2FC5 /* EXPMatchers+beInstanceOf.h */,
+				BFEC08BB18154752009A2FC5 /* EXPMatchers+beInTheRangeOf.h */,
+				BFEC08BC18154752009A2FC5 /* EXPMatchers+beKindOf.h */,
+				BFEC08BD18154752009A2FC5 /* EXPMatchers+beLessThan.h */,
+				BFEC08BE18154752009A2FC5 /* EXPMatchers+beLessThanOrEqualTo.h */,
+				BFEC08BF18154752009A2FC5 /* EXPMatchers+beNil.h */,
+				BFEC08C018154752009A2FC5 /* EXPMatchers+beSubclassOf.h */,
+				BFEC08C118154752009A2FC5 /* EXPMatchers+beSupersetOf.h */,
+				BFEC08C218154752009A2FC5 /* EXPMatchers+beTruthy.h */,
+				BFEC08C318154752009A2FC5 /* EXPMatchers+conformTo.h */,
+				BFEC08C418154752009A2FC5 /* EXPMatchers+contain.h */,
+				BFEC08C518154752009A2FC5 /* EXPMatchers+equal.h */,
+				BFEC08C618154752009A2FC5 /* EXPMatchers+haveCountOf.h */,
+				BFEC08C718154752009A2FC5 /* EXPMatchers+raise.h */,
+				BFEC08C818154752009A2FC5 /* EXPMatchers+raiseWithReason.h */,
+				BFEC08C918154752009A2FC5 /* EXPUnsupportedObject.h */,
+				BFEC08CB18154752009A2FC5 /* NSObject+Expecta.h */,
+				BFEC08CC18154752009A2FC5 /* NSValue+Expecta.h */,
+			);
+			name = Expecta;
 			sourceTree = "<group>";
 		};
 		BFF4A728180D7F0500DB663B /* Products */ = {
@@ -431,6 +600,7 @@
 				BF6BD7C8180F16CF00882A58 /* Sources */,
 				BF6BD7C9180F16CF00882A58 /* Frameworks */,
 				BF6BD7CA180F16CF00882A58 /* Resources */,
+				BFA8A5C31815678F0086934D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -439,7 +609,7 @@
 			);
 			name = "Sculptor Mac Tests";
 			productName = "Sculptor MacTests";
-			productReference = BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.xctest */;
+			productReference = BF6BD7CC180F16CF00882A58 /* Sculptor Mac Tests.octest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BFC3F22A180D5B080034FF3F /* Sculptor iOS */ = {
@@ -468,6 +638,7 @@
 				BFC3F237180D5B080034FF3F /* Sources */,
 				BFC3F238180D5B080034FF3F /* Frameworks */,
 				BFC3F239180D5B080034FF3F /* Resources */,
+				BFEC08DA18155F5F009A2FC5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -476,7 +647,7 @@
 			);
 			name = "Sculptor iOS Tests";
 			productName = SculptorTests;
-			productReference = BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.xctest */;
+			productReference = BFC3F23B180D5B080034FF3F /* Sculptor iOS Tests.octest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -603,6 +774,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BFA8A5C31815678F0086934D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		BFEC08DA18155F5F009A2FC5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF6BD7B2180F16CF00882A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -617,6 +817,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFEC08D718155302009A2FC5 /* SCLTestModel.m in Sources */,
+				BF4854D818148065005704A5 /* SCLURLMatcherSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +835,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC3F24B180D5B080034FF3F /* SculptorTests.m in Sources */,
+				BFEC08D618155302009A2FC5 /* SCLTestModel.m in Sources */,
+				BF4854D718148065005704A5 /* SCLURLMatcherSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +907,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Sculptor/Sculptor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Sculptor;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
@@ -728,6 +936,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sculptor/Sculptor-Prefix.pch";
 				INFOPLIST_FILE = "Sculptor/Sculptor-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = Sculptor;
 				SDKROOT = macosx;
@@ -739,7 +951,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFF4A8B5180D92FE00DB663B /* Mac-Application.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sculptor Mac.framework/Versions/A/Sculptor Mac";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -747,17 +958,28 @@
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sculptor Mac/Sculptor Mac-Prefix.pch";
+				GCC_PREFIX_HEADER = "SculptorTests/SculptorTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sculptor-bllvjynzqwgkqaekgenxkdsthjju/Build/Products/Debug",
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -765,7 +987,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFF4A8B5180D92FE00DB663B /* Mac-Application.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sculptor Mac.framework/Versions/A/Sculptor Mac";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -774,13 +995,23 @@
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sculptor Mac/Sculptor Mac-Prefix.pch";
+				GCC_PREFIX_HEADER = "SculptorTests/SculptorTests-Prefix.pch";
 				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sculptor-bllvjynzqwgkqaekgenxkdsthjju/Build/Products/Debug",
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -890,22 +1121,31 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFF4A8B1180D92FE00DB663B /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sculptor/Sculptor-Prefix.pch";
+				GCC_PREFIX_HEADER = "SculptorTests/SculptorTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -913,18 +1153,27 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFF4A8B1180D92FE00DB663B /* iOS-Application.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Sculptor/Sculptor-Prefix.pch";
+				GCC_PREFIX_HEADER = "SculptorTests/SculptorTests-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

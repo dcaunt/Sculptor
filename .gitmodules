@@ -4,3 +4,9 @@
 [submodule "External/AFNetworking"]
 	path = External/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "SculptorTests/specta"]
+	path = SculptorTests/specta
+	url = https://github.com/specta/specta.git
+[submodule "SculptorTests/expecta"]
+	path = SculptorTests/expecta
+	url = https://github.com/specta/expecta.git
