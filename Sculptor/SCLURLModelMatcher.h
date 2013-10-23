@@ -1,5 +1,5 @@
 //
-//  SCLURLMatcher.h
+//  SCLURLModelMatcher.h
 //  Sculptor
 //
 //  Created by David Caunt on 13/10/2013.
@@ -29,7 +29,7 @@
 #import <Foundation/Foundation.h>
 #import "SCLMantleResponseSerializer.h"
 
-@interface SCLURLMatcher : NSObject <SCLURLResponseMatcher>
+@interface SCLURLModelMatcher : NSObject <SCLModelMatcher>
 
 + (instancetype)matcher;
 + (instancetype)matcherWithPathPrefix:(NSString *)pathPrefix;

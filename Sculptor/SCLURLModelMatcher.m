@@ -1,5 +1,5 @@
 //
-//  SCLURLMatcher.m
+//  SCLURLModelMatcher.m
 //  Sculptor
 //
 //  Created by David Caunt on 13/10/2013.
@@ -26,20 +26,20 @@
  * limitations under the License.
  */
 
-#import "SCLURLMatcher.h"
+#import "SCLURLModelMatcher.h"
 
 #import <Mantle/Mantle.h>
 
-typedef NS_ENUM(NSInteger, SCLURLMatcherType) {
-    SCLURLMatcherTypeNone   = -1,
-    SCLURLMatcherTypeExact  = 0,
-    SCLURLMatcherTypeNumber = 1,
-    SCLURLMatcherTypeText   = 2,
+typedef NS_ENUM(NSInteger, SCLURLModelMatcherType) {
+    SCLURLModelMatcherTypeNone   = -1,
+    SCLURLModelMatcherTypeExact  = 0,
+    SCLURLModelMatcherTypeNumber = 1,
+    SCLURLModelMatcherTypeText   = 2,
 };
 
-@interface SCLURLMatcher ()
+@interface SCLURLModelMatcher ()
 @property (nonatomic, copy) NSString *prefix;
-@property (nonatomic, assign) SCLURLMatcherType matcherType;
+@property (nonatomic, assign) SCLURLModelMatcherType matcherType;
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, strong) NSMutableArray *children;
 @property (nonatomic, unsafe_unretained) Class matchClass;
@@ -53,7 +53,7 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 	return [text rangeOfCharacterFromSet:notDigits].location == NSNotFound;
 }
 
-@implementation SCLURLMatcher
+@implementation SCLURLModelMatcher
 
 + (instancetype)matcher
 {
@@ -69,7 +69,7 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 {
     self = [super init];
     if (self) {
-        _matcherType = SCLURLMatcherTypeNone;
+        _matcherType = SCLURLModelMatcherTypeNone;
 		_children = [NSMutableArray array];
     }
     return self;
@@ -99,12 +99,12 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 		tokens = [newPath componentsSeparatedByString:@"/"];
 	}
 	
-	SCLURLMatcher *node = self;
+	SCLURLModelMatcher *node = self;
 	for (NSString *token in tokens) {
 		NSMutableArray *children = node.children;
 		
-		SCLURLMatcher *existingChild = nil;
-		for (SCLURLMatcher *child in children) {
+		SCLURLModelMatcher *existingChild = nil;
+		for (SCLURLModelMatcher *child in children) {
 			if ([token isEqualToString:child.text]) {
 				node = child;
 				existingChild = node;
@@ -113,13 +113,13 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 		}
 		
 		if (!existingChild) {
-			existingChild = [[SCLURLMatcher alloc] init];
+			existingChild = [[SCLURLModelMatcher alloc] init];
 			if ([token isEqualToString:@"#"]) {
-				existingChild.matcherType = SCLURLMatcherTypeNumber;
+				existingChild.matcherType = SCLURLModelMatcherTypeNumber;
 			} else if ([token isEqualToString:@"*"]) {
-				existingChild.matcherType = SCLURLMatcherTypeText;
+				existingChild.matcherType = SCLURLModelMatcherTypeText;
 			} else {
-				existingChild.matcherType = SCLURLMatcherTypeExact;
+				existingChild.matcherType = SCLURLModelMatcherTypeExact;
 			}
 			existingChild.text = token;
 			[node.children addObject:existingChild];
@@ -145,7 +145,7 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 		return self.matchClass;
 	}
 	
-	SCLURLMatcher *node = self;
+	SCLURLModelMatcher *node = self;
 	for (NSString *u in pathComponents) {
 		NSArray *list = node.children;
 		if (!list) {
@@ -153,16 +153,16 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 		}
 		node = nil;
 		
-		for (SCLURLMatcher *n in list) {
+		for (SCLURLModelMatcher *n in list) {
 			switch (n.matcherType) {
-				case SCLURLMatcherTypeExact:
+				case SCLURLModelMatcherTypeExact:
 	
 					if ([n.text isEqualToString:u]) {
 						node = n;
 					}
 					break;
 					
-				case SCLURLMatcherTypeNumber:
+				case SCLURLModelMatcherTypeNumber:
 					
 					if (SCLTextOnlyContainsDigits(u)) {
 						node = n;
@@ -170,10 +170,10 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 
 					break;
 					
-				case SCLURLMatcherTypeText:
+				case SCLURLModelMatcherTypeText:
 					node = n;
 					break;
-				case SCLURLMatcherTypeNone:
+				case SCLURLModelMatcherTypeNone:
 					// Do nothing
 					break;
 			}
@@ -195,11 +195,11 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 	return [NSString stringWithFormat:@"<%@: %p, type:%ld, text:%@, matchClass:%@, children:%@>", self.class, self, (long)self.matcherType, self.text, NSStringFromClass(self.matchClass), self.children];
 }
 
-#pragma mark - SCLURLResponseMatcher
+#pragma mark - SCLModelMatcher
 
-- (Class)classForURLResponse:(NSURLResponse *)URLResponse
+- (Class)modelClassForResponse:(NSURLResponse *)response data:(NSData *)data
 {
-	return [self match:URLResponse.URL];
+	return [self match:response.URL];
 }
 
 @end

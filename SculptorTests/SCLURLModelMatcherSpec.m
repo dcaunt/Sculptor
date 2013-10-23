@@ -1,5 +1,5 @@
 //
-//  SCLURLMatcherSpec.m
+//  SCLURLModelMatcherSpec.m
 //  Sculptor
 //
 //  Created by David Caunt on 20/10/2013.
@@ -8,16 +8,16 @@
 
 #import "SCLTestModel.h"
 
-SpecBegin(SCLURLMatcher)
+SpecBegin(SCLURLModelMatcher)
 
 it(@"should return nil when no match is found", ^{
-	SCLURLMatcher *matcher = [[SCLURLMatcher alloc] init];
+	SCLURLModelMatcher *matcher = [[SCLURLModelMatcher alloc] init];
 	Class cls = [matcher match:[NSURL URLWithString:@"/test"]];
 	expect(cls).to.beNil();
 });
 
 it(@"should return the correct class when a match is found", ^{
-	SCLURLMatcher *matcher = [[SCLURLMatcher alloc] init];
+	SCLURLModelMatcher *matcher = [[SCLURLModelMatcher alloc] init];
 	expect(matcher).notTo.beNil();
 	
 	[matcher addPath:@"test" forClass:SCLTestModel.class];
@@ -35,7 +35,7 @@ it(@"should return the correct class when a match is found", ^{
 });
 
 it(@"should match regardless of the presence of preceeding slashes in paths and URLs", ^{
-	SCLURLMatcher *matcher = [[SCLURLMatcher alloc] init];
+	SCLURLModelMatcher *matcher = [[SCLURLModelMatcher alloc] init];
 	expect(matcher).notTo.beNil();
 	
 	[matcher addPath:@"/test" forClass:SCLTestModel.class];
@@ -58,7 +58,7 @@ it(@"should match regardless of the presence of preceeding slashes in paths and 
 });
 
 it(@"should ignore the path prefix if present in a URL", ^{
-	SCLURLMatcher *matcher = [[SCLURLMatcher alloc] initWithPathPrefix:@"v1"];
+	SCLURLModelMatcher *matcher = [[SCLURLModelMatcher alloc] initWithPathPrefix:@"v1"];
 	expect(matcher).notTo.beNil();
 	
 	[matcher addPath:@"test" forClass:SCLTestModel.class];
@@ -70,7 +70,7 @@ it(@"should ignore the path prefix if present in a URL", ^{
 });
 
 it(@"should only match if the number of path components is equal", ^{
-	SCLURLMatcher *matcher = [[SCLURLMatcher alloc] init];
+	SCLURLModelMatcher *matcher = [[SCLURLModelMatcher alloc] init];
 	expect(matcher).notTo.beNil();
 	
 	[matcher addPath:@"test/foos" forClass:SCLTestModel.class];
@@ -91,7 +91,7 @@ it(@"should only match if the number of path components is equal", ^{
 });
 
 it(@"should match digits if a # is used", ^{
-	SCLURLMatcher *matcher = [[SCLURLMatcher alloc] init];
+	SCLURLModelMatcher *matcher = [[SCLURLModelMatcher alloc] init];
 	expect(matcher).notTo.beNil();
 	
 	[matcher addPath:@"test/#" forClass:SCLTestModel.class];
@@ -104,7 +104,7 @@ it(@"should match digits if a # is used", ^{
 });
 
 it(@"should not match non-digits if a # is used", ^{
-	SCLURLMatcher *matcher = [[SCLURLMatcher alloc] init];
+	SCLURLModelMatcher *matcher = [[SCLURLModelMatcher alloc] init];
 	expect(matcher).notTo.beNil();
 	
 	[matcher addPath:@"test/#" forClass:SCLTestModel.class];
@@ -115,7 +115,7 @@ it(@"should not match non-digits if a # is used", ^{
 });
 
 it(@"should match everything if a * is used", ^{
-	SCLURLMatcher *matcher = [[SCLURLMatcher alloc] init];
+	SCLURLModelMatcher *matcher = [[SCLURLModelMatcher alloc] init];
 	expect(matcher).notTo.beNil();
 	
 	[matcher addPath:@"test/*" forClass:SCLTestModel.class];

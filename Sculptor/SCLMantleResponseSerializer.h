@@ -8,15 +8,14 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-@class SCLURLMatcher;
-
-@protocol SCLURLResponseMatcher <NSObject>
-- (Class)classForURLResponse:(NSURLResponse *)URLResponse;
+@protocol SCLModelMatcher <NSObject>
+@required
+- (Class)modelClassForResponse:(NSURLResponse *)response data:(NSData *)data;
 @end
 
 @interface SCLMantleResponseSerializer : AFJSONResponseSerializer
-@property (nonatomic, strong, readonly) id<SCLURLResponseMatcher> matcher;
+@property (nonatomic, strong, readonly) id<SCLModelMatcher> modelMatcher;
 
-+ (instancetype)serializerWithUriMatcher:(id<SCLURLResponseMatcher>)matcher readingOptions:(NSJSONReadingOptions)readingOptions;
++ (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher readingOptions:(NSJSONReadingOptions)readingOptions;
 
 @end

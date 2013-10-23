@@ -6,21 +6,19 @@
 //  Copyright (c) 2013 David Caunt. All rights reserved.
 //
 
+#import "SCLMantleResponseSerializer.h"
 #import <Mantle/Mantle.h>
 
-#import "SCLMantleResponseSerializer.h"
-#import "SCLURLMatcher.h"
-
 @interface SCLMantleResponseSerializer ()
-@property (nonatomic, strong, readwrite) id<SCLURLResponseMatcher> matcher;
+@property (nonatomic, strong, readwrite) id<SCLModelMatcher> modelMatcher;
 @end
 
 @implementation SCLMantleResponseSerializer
 
-+ (instancetype)serializerWithUriMatcher:(id<SCLURLResponseMatcher>)matcher readingOptions:(NSJSONReadingOptions)readingOptions
++ (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher readingOptions:(NSJSONReadingOptions)readingOptions
 {
 	SCLMantleResponseSerializer *responseSerializer = [self serializerWithReadingOptions:readingOptions];
-	responseSerializer.matcher = matcher;
+	responseSerializer.modelMatcher = modelMatcher;
 	return responseSerializer;
 }
 
@@ -34,7 +32,7 @@
 		return nil;
 	}
 	
-	Class modelClass = [self.matcher classForURLResponse:response];
+	Class modelClass = [self.modelMatcher modelClassForResponse:response data:data];
 	NSAssert(modelClass, @"Unable to match response URL %@ to a model class", response.URL);
 
 	NSValueTransformer *JSONTransformer = nil;

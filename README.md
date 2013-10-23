@@ -1,15 +1,17 @@
 # Sculptor
 
-Sculptor is a simple AFNetworking response serializer for Mantle.
+An AFNetworking response serializer for Mantle.
 
-`SCLMantleResponseSerializer` is an `AFJSONResponseSerializer` subclass which creates models from JSON responses based on the URL-Model mapping you provide. The URL matching component, `SCLURLMatcher` is heavily inspired by Android's [UriMatcher](http://developer.android.com/reference/android/content/UriMatcher.html).
+The response serializer, `SCLMantleResponseSerializer`, creates Mantle models from JSON responses. It uses an implementation of `SCLModelClassMatcher` to match the response from a network operation to an `MTLModel` subclass. Sculptor ships with a URL-based matching component, `SCLURLModelClassMatcher`, which is suitable for most RESTful services.
+
+SCLURLModelClassMatcher is heavily inspired by Android's [UriMatcher](http://developer.android.com/reference/android/content/UriMatcher.html).
 
 ## Getting Started
 
 Tell Sculptor which paths correspond to which `MTLModel` classes.
 
 ```objective-c
-SCLURLMatcher *matcher = [SCLURLMatcher matcher];
+SCLURLModelClassMatcher *matcher = [SCLURLModelClassMatcher matcher];
 [matcher addPath:@"/users/*" 			 forClass:GHUser.class];
 [matcher addPath:@"/orgs/*"  			 forClass:GHOrganization.class];
 [matcher addPath:@"/repos/*/*/issues/#"  forClass:GHIssue.class];
@@ -47,7 +49,7 @@ Make a request with AFNetworking:
 ```objective-c
 NSURL *baseURL = [NSURL URLWithString:@"https://api.github.com/"];
 self.manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
-self.manager.responseSerializer = [SCLMantleResponseSerializer serializerWithUriMatcher:matcher readingOptions:0];
+self.manager.responseSerializer = [SCLMantleResponseSerializer serializerWithModelMatcher:matcher readingOptions:0];
 
 [self.manager GET:@"/users/dcaunt" parameters:nil success:^(AFHTTPRequestOperation *operation, GHUser *user) {
 	NSLog(@"User model is %@", user);
@@ -58,12 +60,12 @@ self.manager.responseSerializer = [SCLMantleResponseSerializer serializerWithUri
 
 You can use the same response serializer with `AFURLSessionManager` too.
 
-## Matching Paths
+## Matching Paths with SCLURLModelClassMatcher
 
 Path matching is strict and the number of path components must be equal. Take the following matcher, for example:
 
 ```objective-c
-SCLURLMatcher *matcher = [SCLURLMatcher matcher];
+SCLURLModelClassMatcher *matcher = [SCLURLModelClassMatcher matcher];
 [matcher addPath:@"/users/*" forClass:GHUser.class];
 ```
 
@@ -77,7 +79,7 @@ To match this URL, add another path to the matcher:
 If your baseURL contains a path prefix, e.g. `https://api.example.com/v3/` you can tell the matcher to ignore this prefix:
 
 ```objective-c
-SCLURLMatcher *matcher = [SCLURLMatcher matcherWithPathPrefix:@"v3"];
+SCLURLModelClassMatcher *matcher = [SCLURLModelClassMatcher matcherWithPathPrefix:@"v3"];
 ```
 
 Finally, the matcher uses the NSURL in the NSURLResponse provided by AFNetworking. If your web service issues redirects, be sure to add these paths to the matcher.
@@ -98,6 +100,8 @@ Then import the header:
 ```objective-c
 #import <Sculptor/Sculptor.h>
 ```
+
+## 
 
 ## TODO
 * Unit Tests

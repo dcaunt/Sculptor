@@ -6,5 +6,5 @@
 //  Copyright (c) 2013 David Caunt. All rights reserved.
 //
 
-#import <Sculptor/SCLURLMatcher.h>
 #import <Sculptor/SCLMantleResponseSerializer.h>
+#import <Sculptor/SCLURLModelMatcher.h>
