@@ -197,9 +197,17 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 
 #pragma mark - SCLModelMatcher
 
-- (Class)modelClassForResponse:(NSURLResponse *)response data:(NSData *)data
+- (Class)modelClassForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error
 {
-	return [self match:response.URL];
+	Class class = [self match:response.URL];
+	if (!class && error) {
+		NSDictionary *userInfo = @{
+								   NSLocalizedDescriptionKey : @"Failed to match the response URL to a class",
+								   NSLocalizedFailureReasonErrorKey : [NSString stringWithFormat:@"No path spec matches for URL: %@", response.URL]
+								   };
+		*error = [[NSError alloc] initWithDomain:SCLErrorDomain code:NSURLErrorCannotDecodeContentData userInfo:userInfo];
+	}
+	return class;
 }
 
 @end

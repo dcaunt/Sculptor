@@ -8,3 +8,4 @@
 
 #import <Sculptor/SCLMantleResponseSerializer.h>
 #import <Sculptor/SCLURLModelMatcher.h>
+#import <Sculptor/SCLStaticModelMatcher.h>

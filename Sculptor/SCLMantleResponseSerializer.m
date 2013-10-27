@@ -9,6 +9,8 @@
 #import "SCLMantleResponseSerializer.h"
 #import <Mantle/Mantle.h>
 
+NSString * const SCLErrorDomain = @"SCLErrorDomain";
+
 @interface SCLMantleResponseSerializer ()
 @property (nonatomic, strong, readwrite) id<SCLModelMatcher> modelMatcher;
 @end
@@ -32,8 +34,18 @@
 		return nil;
 	}
 	
-	Class modelClass = [self.modelMatcher modelClassForResponse:response data:data];
-	NSAssert(modelClass, @"Unable to match response URL %@ to a model class", response.URL);
+	NSError *matcherError = nil;
+	Class modelClass = [self.modelMatcher modelClassForResponse:response data:data error:&matcherError];
+	if (!modelClass) {
+		if (error) {
+			NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+			[userInfo setValue:NSLocalizedStringFromTable(@"Unable to create model from response data", nil, @"SCL") forKey:NSLocalizedDescriptionKey];
+			[userInfo setValue:NSLocalizedStringFromTable(@"Model matcher failed to match the response to a model class", nil, @"SCL") forKey:NSLocalizedFailureReasonErrorKey];
+			[userInfo setValue:matcherError forKey:NSUnderlyingErrorKey];
+			*error = [[NSError alloc] initWithDomain:SCLErrorDomain code:NSURLErrorCannotDecodeContentData userInfo:userInfo];
+		}
+		return nil;
+	}
 
 	NSValueTransformer *JSONTransformer = nil;
 	if ([responseObject isKindOfClass:[NSDictionary class]]) {
@@ -41,7 +53,13 @@
 	} else if ([responseObject isKindOfClass:[NSArray class]]) {
 		JSONTransformer = [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:modelClass];
 	} else {
-		NSAssert(NO, @"Invalid JSON type returned by JSON response serializer");
+		if (error) {
+			NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+			[userInfo setValue:NSLocalizedStringFromTable(@"Unable to create model from response data", nil, @"SCL") forKey:NSLocalizedDescriptionKey];
+			[userInfo setValue:NSLocalizedStringFromTable(@"Response data is not a dictionary or array of dictionaries", nil, @"SCL") forKey:NSLocalizedFailureReasonErrorKey];
+			*error = [[NSError alloc] initWithDomain:SCLErrorDomain code:NSURLErrorCannotDecodeContentData userInfo:userInfo];
+		}
+		return nil;
 	}
 	
 	return [JSONTransformer transformedValue:responseObject];

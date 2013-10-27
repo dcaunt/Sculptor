@@ -8,9 +8,11 @@
 
 #import <AFNetworking/AFNetworking.h>
 
+extern NSString * const SCLErrorDomain;
+
 @protocol SCLModelMatcher <NSObject>
 @required
-- (Class)modelClassForResponse:(NSURLResponse *)response data:(NSData *)data;
+- (Class)modelClassForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error;
 @end
 
 @interface SCLMantleResponseSerializer : AFJSONResponseSerializer

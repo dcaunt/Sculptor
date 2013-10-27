@@ -15,6 +15,10 @@
 		BF0D06AC181863D7006F97F9 /* libExpecta-ios-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0D06A9181863D0006F97F9 /* libExpecta-ios-universal.a */; };
 		BF0D06AD181863E7006F97F9 /* SCLTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEC08D518155302009A2FC5 /* SCLTestModel.m */; };
 		BF0D06AE181863E8006F97F9 /* SCLTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEC08D518155302009A2FC5 /* SCLTestModel.m */; };
+		BF0D06B1181866D1006F97F9 /* SCLStaticModelMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0D06AF181866D1006F97F9 /* SCLStaticModelMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF0D06B2181866D1006F97F9 /* SCLStaticModelMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0D06AF181866D1006F97F9 /* SCLStaticModelMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF0D06B3181866D1006F97F9 /* SCLStaticModelMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0D06B0181866D1006F97F9 /* SCLStaticModelMatcher.m */; };
+		BF0D06B4181866D1006F97F9 /* SCLStaticModelMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0D06B0181866D1006F97F9 /* SCLStaticModelMatcher.m */; };
 		BF48549018145A7E005704A5 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD9A51814466100882A58 /* AFNetworking.framework */; };
 		BF48549118145A88005704A5 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF4A732180D7F0600DB663B /* Mantle.framework */; };
 		BF6BD7B9180F16CF00882A58 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B8180F16CF00882A58 /* Cocoa.framework */; };
@@ -141,6 +145,8 @@
 		BF0D06A3181863B7006F97F9 /* libSpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-macosx.a"; path = "../SculptorCopy/SculptorTests/specta/products/libSpecta-macosx.a"; sourceTree = "<group>"; };
 		BF0D06A9181863D0006F97F9 /* libExpecta-ios-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-ios-universal.a"; path = "../SculptorCopy/SculptorTests/expecta/products/libExpecta-ios-universal.a"; sourceTree = "<group>"; };
 		BF0D06AA181863D0006F97F9 /* libExpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-macosx.a"; path = "../SculptorCopy/SculptorTests/expecta/products/libExpecta-macosx.a"; sourceTree = "<group>"; };
+		BF0D06AF181866D1006F97F9 /* SCLStaticModelMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLStaticModelMatcher.h; sourceTree = "<group>"; };
+		BF0D06B0181866D1006F97F9 /* SCLStaticModelMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLStaticModelMatcher.m; sourceTree = "<group>"; };
 		BF4854D51814802A005704A5 /* SculptorTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SculptorTests-Prefix.pch"; sourceTree = "<group>"; };
 		BF4854DD18153BAC005704A5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BF6BD7B7180F16CF00882A58 /* Sculptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sculptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,6 +382,8 @@
 				BFC3F255180D62950034FF3F /* SCLMantleResponseSerializer.m */,
 				BFEE18CE181840E000AC3D51 /* SCLURLModelMatcher.h */,
 				BFEE18CF181840E000AC3D51 /* SCLURLModelMatcher.m */,
+				BF0D06AF181866D1006F97F9 /* SCLStaticModelMatcher.h */,
+				BF0D06B0181866D1006F97F9 /* SCLStaticModelMatcher.m */,
 				BFC3F231180D5B080034FF3F /* Supporting Files */,
 			);
 			path = Sculptor;
@@ -548,6 +556,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0D06B2181866D1006F97F9 /* SCLStaticModelMatcher.h in Headers */,
 				BF6BD94D1814453A00882A58 /* Sculptor.h in Headers */,
 				BFEE18D1181840E000AC3D51 /* SCLURLModelMatcher.h in Headers */,
 				BF6BD94E1814453A00882A58 /* SCLMantleResponseSerializer.h in Headers */,
@@ -558,6 +567,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0D06B1181866D1006F97F9 /* SCLStaticModelMatcher.h in Headers */,
 				BFF4A877180D8DF300DB663B /* Sculptor.h in Headers */,
 				BFEE18D0181840E000AC3D51 /* SCLURLModelMatcher.h in Headers */,
 				BFF4A875180D8DF300DB663B /* SCLMantleResponseSerializer.h in Headers */,
@@ -795,6 +805,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6BD9BD1814526C00882A58 /* SCLMantleResponseSerializer.m in Sources */,
+				BF0D06B4181866D1006F97F9 /* SCLStaticModelMatcher.m in Sources */,
 				BFEE18D3181840E000AC3D51 /* SCLURLModelMatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -813,6 +824,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC3F258180D62950034FF3F /* SCLMantleResponseSerializer.m in Sources */,
+				BF0D06B3181866D1006F97F9 /* SCLStaticModelMatcher.m in Sources */,
 				BFEE18D2181840E000AC3D51 /* SCLURLModelMatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
