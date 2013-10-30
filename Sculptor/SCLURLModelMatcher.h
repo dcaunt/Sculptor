@@ -29,7 +29,7 @@
 #import <Foundation/Foundation.h>
 #import "SCLMantleResponseSerializer.h"
 
-@interface SCLURLModelMatcher : NSObject <SCLModelMatcher>
+@interface SCLURLModelMatcher : NSObject <SCLModelMatcher, NSCoding>
 
 + (instancetype)matcher;
 + (instancetype)matcherWithPathPrefix:(NSString *)pathPrefix;

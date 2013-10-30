@@ -26,11 +26,36 @@
     return self;
 }
 
+- (NSString *)description
+{
+	return [NSString stringWithFormat:@"<%@: %p, modelClass:%@>", self.class, self, NSStringFromClass(self.modelClass)];
+}
+
 #pragma mark - SCLModelMatcher
 
 - (Class)modelClassForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error
 {
 	return self.modelClass;
+}
+
+#pragma mark - NSCoding
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    NSString *modelClassName = [aDecoder decodeObjectForKey:@"modelClass"];
+    Class modelClass = NSClassFromString(modelClassName);
+    self = [self initWithModelClass:modelClass];
+    if (!self) {
+        return nil;
+    }
+	
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+	NSString *modelClassName = NSStringFromClass(self.modelClass);
+    [aCoder encodeObject:modelClassName forKey:@"modelClass"];
 }
 
 @end

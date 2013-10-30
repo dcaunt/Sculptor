@@ -65,4 +65,25 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 	return [JSONTransformer transformedValue:responseObject];
 }
 
+#pragma mark - NSCoding
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (!self) {
+        return nil;
+    }
+	
+	self.modelMatcher = [aDecoder decodeObjectForKey:@"modelMatcher"];
+	
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	
+	[aCoder encodeObject:self.modelMatcher forKey:@"modelMatcher"];
+}
+
 @end

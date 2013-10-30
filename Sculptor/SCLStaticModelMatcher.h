@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SCLMantleResponseSerializer.h"
 
-@interface SCLStaticModelMatcher : NSObject <SCLModelMatcher>
+@interface SCLStaticModelMatcher : NSObject <SCLModelMatcher, NSCoding>
 @property (nonatomic, copy, readonly) Class modelClass;
 
 + (instancetype)staticModelMatcher:(Class)modelClass;

@@ -210,4 +210,33 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 	return class;
 }
 
+#pragma mark - NSCoding
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    NSString *pathPrefix = [aDecoder decodeObjectForKey:@"pathPrefix"];
+    self = [self initWithPathPrefix:pathPrefix];
+    if (!self) {
+        return nil;
+    }
+	
+	self.matchClass = NSClassFromString([aDecoder decodeObjectForKey:@"modelClass"]);
+	self.matcherType = (SCLURLModelMatcherType)[aDecoder decodeIntegerForKey:@"matcherType"];
+	self.text = [aDecoder decodeObjectForKey:@"text"];
+	self.children = [aDecoder decodeObjectForKey:@"children"];
+	
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.prefix forKey:@"pathPrefix"];
+	NSString *modelClassName = NSStringFromClass(self.matchClass);
+    [aCoder encodeObject:modelClassName forKey:@"modelClass"];
+	
+	[aCoder encodeInteger:self.matcherType forKey:@"matcherType"];
+	[aCoder encodeObject:self.text forKey:@"text"];
+	[aCoder encodeObject:self.children forKey:@"children"];
+}
+
 @end
