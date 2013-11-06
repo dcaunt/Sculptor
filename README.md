@@ -6,6 +6,8 @@ The response serializer, `SCLMantleResponseSerializer`, creates Mantle models fr
 
 SCLURLModelClassMatcher is heavily inspired by Android's [UriMatcher](http://developer.android.com/reference/android/content/UriMatcher.html).
 
+Sculptor is pre-release software, but I intend to move as quickly towards a 1.0 release as possible, at which point the API will be stable.
+
 ## Getting Started
 
 Tell Sculptor which paths correspond to which `MTLModel` classes.
@@ -104,4 +106,6 @@ Then import the header:
 ## 
 
 ## TODO
+* Request serialization
 * Unit Tests
+* Documentation
