@@ -8,6 +8,7 @@
 
 #import "SCLMantleResponseSerializer.h"
 #import <Mantle/Mantle.h>
+#import "SCLStaticModelMatcher.h"
 
 NSString * const SCLErrorDomain = @"SCLErrorDomain";
 
@@ -16,6 +17,13 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 @end
 
 @implementation SCLMantleResponseSerializer
+
++ (instancetype)serializerForModelClass:(Class)modelClass
+{
+	SCLMantleResponseSerializer *responseSerializer = [self serializer];
+	responseSerializer.modelMatcher = [SCLStaticModelMatcher staticModelMatcher:modelClass];
+	return responseSerializer;
+}
 
 + (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher readingOptions:(NSJSONReadingOptions)readingOptions
 {

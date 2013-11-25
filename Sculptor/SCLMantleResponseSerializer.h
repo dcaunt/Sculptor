@@ -18,6 +18,8 @@ extern NSString * const SCLErrorDomain;
 @interface SCLMantleResponseSerializer : AFJSONResponseSerializer
 @property (nonatomic, strong, readonly) id<SCLModelMatcher> modelMatcher;
 
++ (instancetype)serializerForModelClass:(Class)modelClass;
+
 + (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher readingOptions:(NSJSONReadingOptions)readingOptions;
 
 @end
