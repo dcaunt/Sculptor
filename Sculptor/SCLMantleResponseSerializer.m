@@ -25,9 +25,9 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 	return responseSerializer;
 }
 
-+ (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher readingOptions:(NSJSONReadingOptions)readingOptions
++ (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher
 {
-	SCLMantleResponseSerializer *responseSerializer = [self serializerWithReadingOptions:readingOptions];
+	SCLMantleResponseSerializer *responseSerializer = [self serializerWithReadingOptions:0];
 	responseSerializer.modelMatcher = modelMatcher;
 	return responseSerializer;
 }

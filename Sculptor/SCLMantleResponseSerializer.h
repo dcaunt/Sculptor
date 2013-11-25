@@ -20,6 +20,6 @@ extern NSString * const SCLErrorDomain;
 
 + (instancetype)serializerForModelClass:(Class)modelClass;
 
-+ (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher readingOptions:(NSJSONReadingOptions)readingOptions;
++ (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher;
 
 @end
