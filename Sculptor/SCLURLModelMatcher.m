@@ -86,8 +86,9 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 
 - (void)addPath:(NSString *)path forClass:(Class)class
 {
-	NSParameterAssert(path);
-	NSParameterAssert(class && [class isSubclassOfClass:MTLModel.class]);
+	NSParameterAssert(path != nil);
+	NSParameterAssert(class != nil);
+	NSParameterAssert([class isSubclassOfClass:MTLModel.class]);
 	
 	NSArray *tokens = nil;
 	if ([path length] > 0) {
@@ -131,7 +132,7 @@ static BOOL SCLTextOnlyContainsDigits(NSString *text) {
 
 - (Class)match:(NSURL *)URL
 {
-	NSParameterAssert(URL);
+	NSParameterAssert(URL != nil);
 	
 	NSString *path = URL.path;
 	if (self.prefix && [path hasPrefix:self.prefix]) {

@@ -27,6 +27,7 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 
 + (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher
 {
+	NSParameterAssert(modelMatcher != nil);
 	SCLMantleResponseSerializer *responseSerializer = [self serializerWithReadingOptions:0];
 	responseSerializer.modelMatcher = modelMatcher;
 	return responseSerializer;

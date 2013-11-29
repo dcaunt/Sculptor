@@ -18,6 +18,7 @@
 
 - (id)initWithModelClass:(Class)modelClass
 {
+	NSParameterAssert(modelClass != nil);
 	NSParameterAssert([modelClass isSubclassOfClass:MTLModel.class]);
     self = [super init];
     if (self) {
