@@ -1,4 +1,9 @@
 #!/bin/bash
 
+export SCRIPT_DIR=$(dirname "$0")
+
+${BOOTSTRAP="$SCRIPT_DIR/bootstrap"}
+"$BOOTSTRAP" || exit $?
+
 xctool -project Sculptor.xcodeproj -scheme 'Sculptor iOS' -sdk iphonesimulator -configuration Release test -test-sdk iphonesimulator
 xctool -project Sculptor.xcodeproj -scheme 'Sculptor Mac' -sdk macosx -configuration Release test -test-sdk macosx
