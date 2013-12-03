@@ -906,10 +906,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Sculptor/Sculptor-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Sculptor;
@@ -936,10 +933,7 @@
 				GCC_PREFIX_HEADER = "Sculptor/Sculptor-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Sculptor/Sculptor-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = Sculptor;
 				SDKROOT = macosx;
@@ -966,11 +960,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products/**",
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
-					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/specta/products,
-					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/expecta/products,
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
+					"\"$(SRCROOT)/SculptorTests/specta/products\"",
+					"\"$(SRCROOT)/SculptorTests/expecta/products\"/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1000,11 +991,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products/**",
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
-					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/specta/products,
-					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/expecta/products,
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
+					"\"$(SRCROOT)/SculptorTests/specta/products\"",
+					"\"$(SRCROOT)/SculptorTests/expecta/products\"/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
@@ -1137,11 +1125,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
-					"/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products/**",
-					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/specta/products,
-					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/expecta/products,
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
+					"\"$(SRCROOT)/SculptorTests/specta/products\"",
+					"\"$(SRCROOT)/SculptorTests/expecta/products\"/**",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -1166,11 +1151,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "SculptorTests/SculptorTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
-					"/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products/**",
-					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/specta/products,
-					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/expecta/products,
-					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
+					"\"$(SRCROOT)/SculptorTests/specta/products\"",
+					"\"$(SRCROOT)/SculptorTests/expecta/products\"/**",
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
