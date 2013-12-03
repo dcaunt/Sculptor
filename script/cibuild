@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xctool -project Sculptor.xcodeproj -scheme 'Sculptor iOS' -sdk iphonesimulator -configuration Release test -test-sdk iphonesimulator
+xctool -project Sculptor.xcodeproj -scheme 'Sculptor Mac' -sdk macosx -configuration Release test -test-sdk macosx
