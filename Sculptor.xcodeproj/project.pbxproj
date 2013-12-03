@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		BF0A7ECA18184A0700200B36 /* libSculptor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22B180D5B080034FF3F /* libSculptor.a */; };
 		BF0A7ED918184D0500200B36 /* Sculptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6BD7B7180F16CF00882A58 /* Sculptor.framework */; };
-		BF0D06A7181863BE006F97F9 /* libSpecta-ios-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0D06A2181863B7006F97F9 /* libSpecta-ios-universal.a */; };
-		BF0D06A8181863C1006F97F9 /* libSpecta-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0D06A3181863B7006F97F9 /* libSpecta-macosx.a */; };
-		BF0D06AB181863D4006F97F9 /* libExpecta-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0D06AA181863D0006F97F9 /* libExpecta-macosx.a */; };
-		BF0D06AC181863D7006F97F9 /* libExpecta-ios-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0D06A9181863D0006F97F9 /* libExpecta-ios-universal.a */; };
 		BF0D06AD181863E7006F97F9 /* SCLTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEC08D518155302009A2FC5 /* SCLTestModel.m */; };
 		BF0D06AE181863E8006F97F9 /* SCLTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEC08D518155302009A2FC5 /* SCLTestModel.m */; };
 		BF0D06B1181866D1006F97F9 /* SCLStaticModelMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0D06AF181866D1006F97F9 /* SCLStaticModelMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +28,10 @@
 		BFA9E84F1815423D0061D534 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4854DD18153BAC005704A5 /* SenTestingKit.framework */; };
 		BFA9E8501815424F0061D534 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF4A7E2180D891F00DB663B /* libAFNetworking.a */; };
 		BFA9E851181542570061D534 /* libMantle-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF4A736180D7F0600DB663B /* libMantle-iOS.a */; };
+		BFAED1BF184E1C4400A36902 /* libExpecta-ios-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAED1BD184E1C4400A36902 /* libExpecta-ios-universal.a */; };
+		BFAED1C2184E1C4400A36902 /* libExpecta-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAED1BE184E1C4400A36902 /* libExpecta-macosx.a */; };
+		BFAED1C5184E1C5200A36902 /* libSpecta-ios-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAED1C3184E1C5200A36902 /* libSpecta-ios-universal.a */; };
+		BFAED1C8184E1C5200A36902 /* libSpecta-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAED1C4184E1C5200A36902 /* libSpecta-macosx.a */; };
 		BFC3F22F180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
 		BFC3F23E180D5B080034FF3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC3F22E180D5B080034FF3F /* Foundation.framework */; };
 		BFC3F249180D5B080034FF3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFC3F247180D5B080034FF3F /* InfoPlist.strings */; };
@@ -141,10 +141,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF0D06A2181863B7006F97F9 /* libSpecta-ios-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-ios-universal.a"; path = "../SculptorCopy/SculptorTests/specta/products/libSpecta-ios-universal.a"; sourceTree = "<group>"; };
-		BF0D06A3181863B7006F97F9 /* libSpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-macosx.a"; path = "../SculptorCopy/SculptorTests/specta/products/libSpecta-macosx.a"; sourceTree = "<group>"; };
-		BF0D06A9181863D0006F97F9 /* libExpecta-ios-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-ios-universal.a"; path = "../SculptorCopy/SculptorTests/expecta/products/libExpecta-ios-universal.a"; sourceTree = "<group>"; };
-		BF0D06AA181863D0006F97F9 /* libExpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-macosx.a"; path = "../SculptorCopy/SculptorTests/expecta/products/libExpecta-macosx.a"; sourceTree = "<group>"; };
 		BF0D06AF181866D1006F97F9 /* SCLStaticModelMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLStaticModelMatcher.h; sourceTree = "<group>"; };
 		BF0D06B0181866D1006F97F9 /* SCLStaticModelMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLStaticModelMatcher.m; sourceTree = "<group>"; };
 		BF4854D51814802A005704A5 /* SculptorTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SculptorTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -171,6 +167,10 @@
 		BFA9E861181545760061D534 /* SPTSenTestInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSenTestInvocation.h; path = specta/products/SPTSenTestInvocation.h; sourceTree = "<group>"; };
 		BFA9E862181545760061D534 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = specta/products/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
 		BFA9E863181545760061D534 /* SPTSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = specta/products/SPTSpec.h; sourceTree = "<group>"; };
+		BFAED1BD184E1C4400A36902 /* libExpecta-ios-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-ios-universal.a"; path = "SculptorTests/expecta/products/libExpecta-ios-universal.a"; sourceTree = "<group>"; };
+		BFAED1BE184E1C4400A36902 /* libExpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-macosx.a"; path = "SculptorTests/expecta/products/libExpecta-macosx.a"; sourceTree = "<group>"; };
+		BFAED1C3184E1C5200A36902 /* libSpecta-ios-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-ios-universal.a"; path = "SculptorTests/specta/products/libSpecta-ios-universal.a"; sourceTree = "<group>"; };
+		BFAED1C4184E1C5200A36902 /* libSpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-macosx.a"; path = "SculptorTests/specta/products/libSpecta-macosx.a"; sourceTree = "<group>"; };
 		BFC3F22B180D5B080034FF3F /* libSculptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSculptor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC3F22E180D5B080034FF3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFC3F232180D5B080034FF3F /* Sculptor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sculptor-Prefix.pch"; sourceTree = "<group>"; };
@@ -259,11 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0A7ED918184D0500200B36 /* Sculptor.framework in Frameworks */,
-				BF0D06AB181863D4006F97F9 /* libExpecta-macosx.a in Frameworks */,
+				BFAED1C2184E1C4400A36902 /* libExpecta-macosx.a in Frameworks */,
 				BFA8A5C2181566A30086934D /* SenTestingKit.framework in Frameworks */,
 				BFA8A5C0181566970086934D /* AFNetworking.framework in Frameworks */,
 				BFA8A5C1181566970086934D /* Mantle.framework in Frameworks */,
-				BF0D06A8181863C1006F97F9 /* libSpecta-macosx.a in Frameworks */,
+				BFAED1C8184E1C5200A36902 /* libSpecta-macosx.a in Frameworks */,
 				BF6BD7CE180F16CF00882A58 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,12 +280,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF0D06AC181863D7006F97F9 /* libExpecta-ios-universal.a in Frameworks */,
 				BF0A7ECA18184A0700200B36 /* libSculptor.a in Frameworks */,
 				BFA9E851181542570061D534 /* libMantle-iOS.a in Frameworks */,
 				BFA9E8501815424F0061D534 /* libAFNetworking.a in Frameworks */,
-				BF0D06A7181863BE006F97F9 /* libSpecta-ios-universal.a in Frameworks */,
 				BFA9E84F1815423D0061D534 /* SenTestingKit.framework in Frameworks */,
+				BFAED1C5184E1C5200A36902 /* libSpecta-ios-universal.a in Frameworks */,
+				BFAED1BF184E1C4400A36902 /* libExpecta-ios-universal.a in Frameworks */,
 				BFC3F23E180D5B080034FF3F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,10 +360,10 @@
 		BFC3F22D180D5B080034FF3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF0D06A9181863D0006F97F9 /* libExpecta-ios-universal.a */,
-				BF0D06AA181863D0006F97F9 /* libExpecta-macosx.a */,
-				BF0D06A2181863B7006F97F9 /* libSpecta-ios-universal.a */,
-				BF0D06A3181863B7006F97F9 /* libSpecta-macosx.a */,
+				BFAED1BD184E1C4400A36902 /* libExpecta-ios-universal.a */,
+				BFAED1BE184E1C4400A36902 /* libExpecta-macosx.a */,
+				BFAED1C3184E1C5200A36902 /* libSpecta-ios-universal.a */,
+				BFAED1C4184E1C5200A36902 /* libSpecta-macosx.a */,
 				BF4854DD18153BAC005704A5 /* SenTestingKit.framework */,
 				BFF4A7DD180D891F00DB663B /* SculptorDependencies.xcodeproj */,
 				BFF4A727180D7F0500DB663B /* Mantle.xcodeproj */,
@@ -970,6 +970,7 @@
 					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
 					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/specta/products,
 					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/expecta/products,
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1003,6 +1004,7 @@
 					/Users/dcaunt/Projects/Sculptor/SculptorTests/specta/products,
 					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/specta/products,
 					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/expecta/products,
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
@@ -1139,6 +1141,7 @@
 					"/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products/**",
 					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/specta/products,
 					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/expecta/products,
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -1167,6 +1170,7 @@
 					"/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products/**",
 					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/specta/products,
 					/Users/dcaunt/Projects/SculptorCopy/SculptorTests/expecta/products,
+					/Users/dcaunt/Projects/Sculptor/SculptorTests/expecta/products,
 				);
 				OTHER_LDFLAGS = (
 					"-all_load",
