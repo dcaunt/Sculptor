@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "Sculptor"
-  s.version      = "0.2.2"
-  s.summary      = "An AFNetworking response serializer for Mantle."
+  s.version      = "0.3.0"
+  s.summary      = "The AFNetworking serializer for Mantle."
  
   s.homepage     = "https://github.com/dcaunt/Sculptor"
   s.license      = 'MIT'
