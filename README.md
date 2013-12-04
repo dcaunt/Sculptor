@@ -13,7 +13,7 @@ Sculptor is pre-[1.0](http://semver.org/) software but the API is already well-d
 Install via CocoaPods:
 
 ```ruby
-pod 'Sculptor', '~> 0.2'
+pod 'Sculptor', '~> 0.3'
 ```
 
 Or clone this repo and drag Sculptor's project file into your project file or workspace.
