@@ -20,9 +20,8 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 
 + (instancetype)serializerForModelClass:(Class)modelClass
 {
-	SCLMantleResponseSerializer *responseSerializer = [self serializer];
-	responseSerializer.modelMatcher = [SCLStaticModelMatcher staticModelMatcher:modelClass];
-	return responseSerializer;
+	id<SCLModelMatcher> modelMatcher = [SCLStaticModelMatcher staticModelMatcher:modelClass];
+	return [self serializerWithModelMatcher:modelMatcher];
 }
 
 + (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher
