@@ -19,7 +19,9 @@ extern NSString * const SCLErrorDomain;
 @property (nonatomic, strong, readonly) id<SCLModelMatcher> modelMatcher;
 
 + (instancetype)serializerForModelClass:(Class)modelClass;
++ (instancetype)serializerForModelClass:(Class)modelClass keypath:(NSString *)keypath;
 
 + (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher;
++ (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher keypath:(NSString *)keypath;
 
 @end

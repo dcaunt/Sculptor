@@ -14,11 +14,17 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 
 @interface SCLMantleResponseSerializer ()
 @property (nonatomic, strong, readwrite) id<SCLModelMatcher> modelMatcher;
+@property (nonatomic, copy) NSString *keypath;
 @end
 
 @implementation SCLMantleResponseSerializer
 
 + (instancetype)serializerForModelClass:(Class)modelClass
+{
+    return [self serializerForModelClass:modelClass keypath:nil];
+}
+
++ (instancetype)serializerForModelClass:(Class)modelClass keypath:(NSString *)keypath
 {
 	id<SCLModelMatcher> modelMatcher = [SCLStaticModelMatcher staticModelMatcher:modelClass];
 	return [self serializerWithModelMatcher:modelMatcher];
@@ -26,9 +32,15 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 
 + (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher
 {
+    return [self serializerWithModelMatcher:modelMatcher keypath:nil];
+}
+
++ (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher keypath:(NSString *)keypath
+{
 	NSParameterAssert(modelMatcher != nil);
 	SCLMantleResponseSerializer *responseSerializer = [self serializerWithReadingOptions:0];
 	responseSerializer.modelMatcher = modelMatcher;
+    responseSerializer.keypath = keypath;
 	return responseSerializer;
 }
 
@@ -55,6 +67,10 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 		return nil;
 	}
 
+    if (self.keypath) {
+        responseObject = [responseObject valueForKeyPath:self.keypath];
+    }
+    
 	NSValueTransformer *JSONTransformer = nil;
 	if ([responseObject isKindOfClass:[NSDictionary class]]) {
 		JSONTransformer = [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:modelClass];
