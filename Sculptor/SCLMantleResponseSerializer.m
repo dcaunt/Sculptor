@@ -27,7 +27,7 @@ NSString * const SCLErrorDomain = @"SCLErrorDomain";
 + (instancetype)serializerForModelClass:(Class)modelClass keypath:(NSString *)keypath
 {
 	id<SCLModelMatcher> modelMatcher = [SCLStaticModelMatcher staticModelMatcher:modelClass];
-	return [self serializerWithModelMatcher:modelMatcher];
+	return [self serializerWithModelMatcher:modelMatcher keypath:keypath];
 }
 
 + (instancetype)serializerWithModelMatcher:(id<SCLModelMatcher>)modelMatcher
